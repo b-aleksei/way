@@ -1,0 +1,107 @@
+.main-bg {
+  position: relative;
+}
+
+.main-bg__img {
+  width: 100%;
+  height: auto;
+}
+
+.main-bg__ctx {
+  position: absolute;
+  top: 0;
+  left: 56%;
+  width: 398px;
+  padding-top: 9.6%;
+  color: $white;
+  height: 100%;
+  overflow-y: auto;
+
+  @media (max-width: 1400px) {
+    padding-top: 4.8%;
+  }
+}
+
+.main-bg__ctx h1 {
+  @include font(55, 80, 600);
+  margin-top: 0;
+  margin-bottom: 28px;
+  letter-spacing: -1.1px;
+}
+
+.main-bg__ctx p {
+  padding-right: 30px;
+  @include font(16, 27);
+  margin-bottom: 35px;
+  letter-spacing: -0.5px;
+}
+
+.main-bg__watch {
+  @include redButton(340px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 40px;
+
+  &::after {
+    content: url("../img/arrow-right.svg");
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: $tablet) {
+  .main-bg__ctx {
+    left: 24.5%;
+    padding-top: 7.8%;
+  }
+
+  .main-bg__ctx h1 {
+    @include font(30, 45, 600);
+    margin-bottom: 0;
+    letter-spacing: 0;
+    word-break: break-all;
+  }
+
+  .main-bg__ctx p {
+    padding-right: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .main-bg__watch {
+    width: 250px;
+    padding: 15px 40px;
+    @include font(10, 12, 500);
+    margin: 0 auto;
+    word-break: break-all;
+  }
+}
+
+@media (max-width: $mobile) {
+  .main-bg__ctx {
+    position: static;
+    width: auto;
+    padding: 0 16px;
+    height: auto;
+    overflow-y: unset;
+  }
+
+  .main-bg__ctx h1 {
+    position: absolute;
+    top: 19%;
+    right: 49%;
+    transform: translateX(50%);
+    width: 230px;
+    @include font(24, 36, 600);
+    text-align: center;
+  }
+
+  .main-bg__ctx p {
+    margin-bottom: 18px;
+    color: $veryDark;
+  }
+
+  .main-bg__watch {
+    width: 288px;
+  }
+}

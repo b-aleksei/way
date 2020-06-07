@@ -1,0 +1,254 @@
+.wrap-places {
+  padding: 0 81px;
+}
+
+.places {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.places > h2:first-child {
+  margin-top: 193px;
+  margin-bottom: 0;
+  padding-bottom: 33px;
+  width: 350px;
+  @include redUnderline(229px, 5px);
+  @include font(55, 80, 600);
+  letter-spacing: -1.2px;
+}
+
+.places > p:first-of-type {
+  width: 350px;
+  margin-top: 30px;
+  margin-bottom: 56px;
+  @include font(16, 28);
+  letter-spacing: -0.5px;
+  color: $lightDark;
+}
+
+.places__link {
+  position: absolute;
+  top: 152px;
+  right: 50%;
+  transform: translate(50%);
+  width: 270px;
+  padding: 30px 25px;
+  @include font(14, 17, 500);
+  color: $white;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  word-break: break-word;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  opacity: 0;
+  z-index: 2;
+
+  &:focus
+  {
+    opacity: 1;
+    outline: none;
+  }
+
+  &:focus ~ .places__description
+  {
+    right: 0;
+    transform: translate(0);
+  }
+
+  &:focus ~ .places__img-hover
+  {
+    display: block;
+  }
+}
+
+.places__img-hover {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: $gray;
+  z-index: 1;
+}
+
+.places__list img {
+  width: 100%;
+  height: auto;
+}
+
+.places__list {
+  display: flex;
+  flex-wrap: wrap;
+  @include resetList;
+  justify-content: center;
+}
+
+.places__item:not(:nth-child(3n + 3)):not(:last-child) {
+  margin-right: 60px;
+}
+.places__item:last-child:nth-child(5n) {
+  margin-left: 60px;
+}
+.places__item:nth-child(n + 4) {
+  margin-top: 101px;
+}
+
+.places__content {
+  position: relative;
+  max-width: 350px;
+  height: 430px;
+  margin: 0;
+
+  &:hover .places__link {
+    opacity: 1;
+  }
+
+  &:hover .places__img-hover {
+    display: block;
+  }
+
+  &:hover .places__description
+  {
+    right: 0;
+    transform: translate(0);
+  }
+}
+
+.places__description {
+  position: absolute;
+  bottom: -1px;
+  right: 50%;
+  width: 215px;
+  height: 63px;
+  transform: translate(50%);
+  background-color: $white;
+  @include font(24, 63, 500);
+  text-align: center;
+  letter-spacing: -0.4px;
+  word-break: break-word;
+  z-index: 5;
+  transition: 0.3s;
+}
+
+@media (max-width: 1348px) {
+  .places__item:last-child:nth-child(5n) {
+    margin-left: unset;
+  }
+
+  .places__item:not(:nth-child(2n + 1)):not(:first-child) {
+    margin-left: 60px;
+    margin-right: 0;
+  }
+
+  .places__item:not(:nth-child(2n + 2)):not(:last-child) {
+    margin-right: 60px;
+    margin-left: 0;
+  }
+
+  .places__item:nth-child(n + 3) {
+    margin-top: 101px;
+  }
+}
+
+@media (max-width: $tablet) {
+  .wrap-places {
+    padding: 0 70px;
+  }
+
+  .places__content {
+    position: relative;
+    max-width: 288px;
+    height: 425px;
+    margin: auto;
+  }
+
+  .places__item:not(:nth-child(2n + 1)):not(:first-child) {
+    margin-left: 15px;
+    margin-right: 0;
+  }
+
+  .places__item:not(:nth-child(2n + 2)):not(:last-child) {
+    margin-right: 15px;
+    margin-left: 0;
+  }
+
+  .places__item:nth-child(n + 3) {
+    margin-top: 20px;
+  }
+
+  .places__item:last-child {
+    margin-top: 30px;
+  }
+
+  .places > h2:first-child {
+    margin: 74px 0 0 168px;
+    padding-bottom: 0;
+    width: auto;
+    @include font(30, 45, 600);
+    letter-spacing: 0;
+
+    &::after {
+      content: none;
+    }
+  }
+
+  .places > p:first-of-type {
+    width: 350px;
+    margin: 21px 0 40px 150px;
+
+    &::before {
+      content: "";
+      margin-left: 20px;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .wrap-places {
+    padding: 0 81px;
+  }
+
+  .places__list {
+    display: block;
+  }
+
+  .wrap-places {
+    padding: 0 16px;
+  }
+
+  .places__item:not(:nth-child(2n + 1)):not(:first-child) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .places__item:not(:nth-child(2n + 2)):not(:last-child) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .places__item:nth-child(n + 2) {
+    margin-top: 35px;
+  }
+
+  .places__item:last-child {
+    margin-top: 35px;
+  }
+
+  .places > h2:first-child {
+    margin: 110px 0 0 0;
+    padding-bottom: 0;
+    @include font(24, 36, 600);
+    text-align: center;
+  }
+
+  .places > p:first-of-type {
+    width: auto;
+    margin: 21px 0 19px 0;
+    text-align: center;
+
+    &::before {
+      content: none;
+    }
+  }
+}

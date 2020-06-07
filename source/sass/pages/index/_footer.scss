@@ -1,0 +1,257 @@
+.footer {
+  display: flex;
+  width: 1148px;
+  margin: 145px auto 0 auto;
+  @include font(14, 17);
+  color: $gray;
+}
+
+.footer__section--countries,
+.footer__section--contacts
+{
+  position: relative;
+  width: 391px;
+  flex-shrink: 0;
+
+  &::after {
+    content: '';
+    position: absolute;
+    height: 188px;
+    top: 19px;
+    right: 0;
+    border-right: 1px solid $tabColor;
+  }
+}
+
+.footer__section--countries {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-right: 40px;
+}
+.footer__header{
+  width: 100%;
+@include font(18, 32, 600);
+  margin-bottom: 23px;
+  color: $dark;
+}
+
+.footer__header--countries {
+  margin-bottom: 0;
+  line-height: 28px;
+}
+
+.footer__header--travels {
+  margin-bottom: 20px;
+}
+
+.footer__countries {
+  @include resetList;
+}
+
+.footer__countries a {
+  text-decoration: none;
+}
+
+.footer__country {
+  display: block;
+  @include resetLink;
+  margin-bottom: 10px;
+}
+
+.footer__contact {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  color: $basic;
+
+  &::before {
+    content: url("../img/mail.svg");
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.footer__section--contacts {
+  padding-left: 90px;
+}
+
+.footer__section--travels {
+  padding-left: 47px;
+}
+
+.footer__contact:last-child {
+  @include font(16, 32);
+  margin-top: 19px;
+  &::before {
+    content: url("../img/gray-phone.svg");
+  }
+}
+
+.footer__travels {
+  line-height: 24px;
+}
+
+.footer__email-2 {
+  display: none;
+}
+
+@media (max-width: $middleState) {
+  .footer {
+    flex-wrap: wrap;
+    width: 924px;
+    justify-content: center;
+  }
+
+  .footer__section--countries {
+    width: 395px;
+  }
+
+  .footer__section--contacts {
+    width: auto;
+  }
+
+  .footer__section--contacts::after {
+    display: none;
+  }
+
+  .footer__section--travels {
+    display: flex;
+    width: 100%;
+    padding-left: 0;
+    margin-top: 60px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__header--travels,
+  .footer__travels
+  {
+    text-align: center;
+  }
+
+}
+
+@media (max-width: $tablet) {
+  .footer {
+    width: auto;
+    margin: 53px 21px 0 21px;
+    justify-content: flex-start;
+  }
+
+  .footer__header--countries {
+    margin-bottom: 21px;
+    line-height: 32px;
+  }
+
+  .footer__section--contacts {
+    padding-left: 50px;
+  }
+
+  .footer__section--countries {
+    padding-right: 53px;
+    width: 54.5%;
+  }
+
+  .footer__section--travels {
+    margin-top: 17px;
+    padding-top: 12px;
+    border-top: 1px solid $tabColor;
+  }
+
+  .footer__section--travels h3 {
+    margin-bottom: 5px;
+  }
+
+  .footer__travels {
+    padding: 0 17px;
+    text-align: center;
+  }
+
+  .footer__email {
+    display: none;
+  }
+
+  .footer__email-2 {
+    display: block;
+  }
+}
+
+@media (max-width: $mobile) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 13px 0 13px;
+  }
+
+  .footer__header--countries {
+    padding-right: 10px;
+  }
+
+  .footer__countries {
+    text-align: center;
+  }
+
+  .footer__countries:first-of-type {
+    margin-right: 38px;
+  }
+
+  .footer__countries:nth-last-child(2) {
+    margin-left: 38px;
+    margin-right: 10px;
+  }
+
+  .footer__countries:last-child {
+    width: 100%;
+    margin-top: 11px;
+    margin-right: 8px;
+    text-align: center;
+  }
+
+  .footer__header  {
+    text-align: center;
+    padding-right: 10px;
+  }
+
+  .footer__section--travels {
+    border-top: none;
+    padding: 0;
+  }
+
+  .footer__header--travels {
+    padding: 0 0 0 5px;
+    margin-top: 14px;
+  }
+
+  .footer__travels {
+    padding: 0;
+  }
+
+  .footer__section--countries {
+    padding-right: 0;
+    padding-bottom: 8px;
+    width: 100%;
+    justify-content: center;
+    border-bottom: 1px solid $tabColor;
+
+    &::after {
+     display: none;
+    }
+  }
+
+  .footer__section--contacts {
+    width: 100%;
+    padding-left: 0;
+    padding-bottom: 13px;
+    margin-top: 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid $tabColor;
+  }
+
+  .footer__contact {
+    margin-right: 11px;
+  }
+}

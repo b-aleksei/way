@@ -1,0 +1,215 @@
+.tour {
+  display: flex;
+  margin-top: 77px;
+}
+
+.tour__text {
+  width: 470px;
+}
+.tour__image {
+  width: 430px;
+}
+.tour__image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.tour__text h2 {
+  @include font(55, 90, 600);
+  @include redUnderline(176px, 3px);
+  margin-top: 11px;
+  padding-bottom: 17px;
+  margin-bottom: 31px;
+  letter-spacing: -1.2px;
+}
+
+.tour__text p {
+  @include font(16, 28);
+  padding-right: 100px;
+  margin-bottom: 50px;
+  letter-spacing: -0.5px;
+  color: $lightDark;
+}
+
+.tour__bye {
+  @include redButton(250px);
+  padding: 30px 30px;
+  text-align: center;
+}
+
+.tour__comment {
+  position: absolute;
+  width: 380px;
+  bottom: 113px;
+  right: 0;
+  margin: 0;
+  padding: 0 28px 0 28px;
+  background-color: $white;
+}
+
+.tour__comment h2 {
+  @include redUnderline(68px, 1px);
+  @include font(30, 37, 500);
+  letter-spacing: -0.7px;
+  padding-bottom: 13px;
+  margin-bottom: 20px;
+  margin-top: 31px;
+}
+
+.tour__comment p {
+  @include font(14, 28);
+  letter-spacing: -0.4px;
+  margin-bottom: 40px;
+  color: $lightDark;
+}
+
+
+.tour__comment figcaption {
+  position: relative;
+  font-family: "Poppins", "Arial", sans-serif;
+  @include font(16, 24, 500);
+  padding-left: 54px;
+  margin-bottom: 35px;
+  letter-spacing: -0.5px;
+  color: $lightDark;
+
+  &::before {
+    content: url("../img/thambnail.jpg");
+    position: absolute;
+    width: 37px;
+    height: 38px;
+    top: -10px;
+    left: 0;
+  }
+}
+
+@media (max-width: $middleState) {
+  .tour {
+    display: block;
+  }
+
+  .tour__image {
+    width: auto;
+  }
+
+  .tour__text {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .tour__text p {
+    padding-right: 0;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .tour__comment {
+    position: absolute;
+    width: 380px;
+    bottom: 0;
+    right: 50%;
+    transform: translate(50%);
+    margin: 0;
+    padding: 0 28px 0 28px;
+    background-color: $white;
+  }
+}
+
+@media (max-width: $tablet) {
+  .tour {
+    margin-top: 21px;
+  }
+
+  .tour__text h2 {
+    @include font(30, 45, 600);
+    padding-bottom: 0;
+    margin-bottom: 5px;
+    letter-spacing: 0;
+
+    &::after {
+      content: none;
+    }
+  }
+
+  .tour__text {
+    margin-bottom: 29px;
+  }
+
+  .tour__text p {
+    margin: 16px 21px 18px;
+  }
+
+  .tour__bye {
+    @include font(10, 12, 500);
+    padding: 20px 30px;
+    text-align: center;
+  }
+
+  .tour__comment figcaption {
+    margin-bottom: 5px;
+  }
+
+  .tour__comment h2 {
+    margin-top: 31px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .tour__text {
+    margin-bottom: 45px;
+  }
+
+  .tour__text h2 {
+    @include font(24, 36, 600);
+  }
+
+  .tour__comment h2 {
+    @include font(20, 24, 500);
+    margin-top: 31px;
+    margin-bottom: 0;
+  }
+
+  .tour__comment {
+    position: absolute;
+    width: 268px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: -40px;
+    padding: 0 22px;
+  }
+
+  .tour__comment p {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 18px;
+  }
+
+  .tour__comment figcaption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    margin-right: 5px;
+    margin-bottom: 0;
+
+    &::before {
+      content: url("../img/thambnail.jpg");
+      position: static;
+      margin-bottom: 9px;
+    }
+  }
+
+  .tour {
+    margin-top: 10px;
+  }
+
+
+  .tour__bye {
+    width: 288px;
+  }
+}
