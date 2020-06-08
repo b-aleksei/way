@@ -33,12 +33,12 @@
     previousTarget = target;
   }
 
-  linksMain.forEach(anchor => {
-    makeSmoothScroll(anchor)
+  linksMain.forEach(link => {
+    makeSmoothScroll(link)
   })
 
-  anchors.forEach(anchor => {
-    makeSmoothScroll(anchor, showTarget)
+  anchors.forEach(link => {
+    makeSmoothScroll(link, showTarget)
   })
 
 
