@@ -36,14 +36,43 @@ body {
   margin: auto;
 }
 
-/*@media (max-width: $tablet) {
-  .container {
-    max-width: $tablet;
+.to_top {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  box-shadow: 0 0 10px 1px rgba(103, 58, 39, 0.8);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 999;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-top: none;
+    border-bottom: 15px solid $basic;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
   }
 }
 
-@media (max-width: $mobile) {
-  .container {
-    max-width: $mobile;
+.to_top:active {
+  box-shadow: 0 0 5px 3px rgba(103, 58, 39, 0.8);
+
+  &::after {
+    border-bottom-color: $accent;
   }
-}*/
+}
+
+.to_top-show {
+  display: block;
+}
