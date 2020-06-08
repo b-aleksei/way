@@ -73,6 +73,10 @@ body {
   }
 }
 
+.to_top:focus::after {
+  outline: none;
+}
+
 .to_top-show {
   display: block;
 }
