@@ -35,79 +35,47 @@ places.addEventListener('click', function (e) {
 
 })();
 
-//плавный скролл с главного экрана
+//плавный скролл анкоров
 
 (function () {
 
-let anchor = document.querySelector(".main-bg__watch");
+  let linksMain = document.querySelectorAll(".scroll-to");
+  let anchors = document.querySelectorAll(".show-content");
+  let previousTarget = document.querySelector('.tabs__item:last-child');
 
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
+  let makeSmoothScroll = function (link, callBack) {
 
-    let getId = anchor.getAttribute("href");
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
 
-    if (getId) {
-      document.querySelector(getId).scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      })
-    }
+      let targetId = this.getAttribute("href");
+
+      if (targetId) {
+        let target = document.querySelector(targetId)
+        if (callBack) {
+          callBack(target)
+        }
+        target.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        })
+      }
+    })
+  }
+
+  let showTarget = function (target) {
+    previousTarget.style.display = 'none'
+    target.style.display = 'block';
+    previousTarget = target;
+  }
+
+  linksMain.forEach(anchor => {
+  makeSmoothScroll(anchor)
   })
-
-
-  let anchors = document.querySelectorAll(".scroll-to");
-  let previousTarget = document.createElement('div');
 
   anchors.forEach(anchor => {
-
-    anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-
-    let getId = anchor.getAttribute("href");
-
-    if (getId) {
-      previousTarget.style.display = 'none'
-      let target = document.querySelector(getId);
-      target.style.display = 'block';
-      target.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      })
-      previousTarget = target;
-    }
+  makeSmoothScroll(anchor, showTarget)
   })
-  })
-
-
-
-/*
-scroll-to - класс каждой ссылки анкора
-
-.to_top {
-  display: none;
-  position: fixed;
-  bottom: 30px;
-  right: 10px;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  line-height: 40px;
-  box-shadow: 0 0 5px 1px rgba(103, 58, 39, 0.8);
-  color: #ba0b11;
-  background-color: #ffecb8;
-  cursor: pointer;
-  border-radius: 5px;
-  z-index: 999;
-}
-
-.to_top:active {
-  color: #000000;
-}
-
-.to_top-show {
-  display: block;
-}
-*/
 
 })();
 
