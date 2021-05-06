@@ -6626,7 +6626,7 @@
         <h3 class="menu-title">Войти</h3>
       </div>
       <div class="modal-main">
-        <form class="form" method="post" action="https://jsonplaceholder.typicode.com/posts" autocomplete="on">
+        <form class="form form--login" method="post" action="https://jsonplaceholder.typicode.com/posts" autocomplete="on">
           <label class="form__field-wrap">
             <span class="form__field-name">Электронная почта</span>
             <input type="text" name="email" placeholder="Введите адрес электронной почты" data-validate="email" required>
@@ -6634,7 +6634,7 @@
           </label>
           <label class="form__field-wrap">
             <span class="form__field-name">Пароль</span>
-            <input type="password" placeholder="Введите пароль" name="password" required>
+            <input type="password" placeholder="Введите пароль" name="password" data-validate required>
             <span data-error></span>
           </label>
           <a class="form__forgot-pass form__link" href="#!" data-modal-open="modal-recover">Не помню пароль</a>
@@ -6764,29 +6764,29 @@
         <h3 class="menu-title">Регистрация</h3>
       </div>
       <div class="modal-main">
-        <form class="form" method="post" action="https://jsonplaceholder.typicode.com/posts" autocomplete="on">
+        <form class="form form--register" method="post" action="https://jsonplaceholder.typicode.com/posts" autocomplete="on">
           <label class="form__field-wrap">
-            <span class="form__field-name">Ваше имя</span>
-            <input type="text" name="name" placeholder="Ваше имя" required>
+            <span class="form__field-name">Ваше имя*</span>
+            <input type="text" name="name" placeholder="Ваше имя" data-validate required>
             <span data-error></span>
           </label>
           <label class="form__field-wrap">
-            <span class="form__field-name">Электронная почта</span>
+            <span class="form__field-name">Электронная почта*</span>
             <input type="text" name="email" placeholder="Введите адрес электронной почты" data-validate="email" required>
             <span data-error></span>
           </label>
           <label class="form__field-wrap">
-            <span class="form__field-name">Пароль</span>
-            <input type="password" placeholder="Введите пароль" name="password" required>
+            <span class="form__field-name">Пароль*</span>
+            <input type="password" placeholder="Введите пароль" name="password" data-validate required>
             <span data-error></span>
           </label>
           <label class="form__field-wrap">
-            <span class="form__field-name">Повторите пароль</span>
-            <input type="password" placeholder="Повторите пароль" name="repeat-password" required>
+            <span class="form__field-name">Повторите пароль*</span>
+            <input type="password" placeholder="Повторите пароль" name="repeat-password" data-validate required>
             <span data-error></span>
           </label>
           <label class="form__checkbox-wrap">
-            <input class="visually-hidden" type="checkbox" name="agreement" required>
+            <input class="visually-hidden" type="checkbox" name="agreement" data-validate required>
             <span class="checkbox-item"></span>
             <span>Нажимая кнопку вы даете согласие на обработку персональных данных и соглашаетесь с <a class="privacy-policy-link link" href="#!" data-modal-open="privacy-policy">политикой конфиденциальности.</a></span>
           </label>

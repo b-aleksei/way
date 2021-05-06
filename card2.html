@@ -4269,7 +4269,7 @@
         <h3 class="menu-title">Войти</h3>
       </div>
       <div class="modal-main">
-        <form class="form" method="post" action="https://jsonplaceholder.typicode.com/posts" autocomplete="on">
+        <form class="form form--login" method="post" action="https://jsonplaceholder.typicode.com/posts" autocomplete="on">
           <label class="form__field-wrap">
             <span class="form__field-name">Электронная почта</span>
             <input type="text" name="email" placeholder="Введите адрес электронной почты" data-validate="email" required>
@@ -4277,7 +4277,7 @@
           </label>
           <label class="form__field-wrap">
             <span class="form__field-name">Пароль</span>
-            <input type="password" placeholder="Введите пароль" name="password" required>
+            <input type="password" placeholder="Введите пароль" name="password" data-validate required>
             <span data-error></span>
           </label>
           <a class="form__forgot-pass form__link" href="#!" data-modal-open="modal-recover">Не помню пароль</a>
@@ -4407,29 +4407,29 @@
         <h3 class="menu-title">Регистрация</h3>
       </div>
       <div class="modal-main">
-        <form class="form" method="post" action="https://jsonplaceholder.typicode.com/posts" autocomplete="on">
+        <form class="form form--register" method="post" action="https://jsonplaceholder.typicode.com/posts" autocomplete="on">
           <label class="form__field-wrap">
-            <span class="form__field-name">Ваше имя</span>
-            <input type="text" name="name" placeholder="Ваше имя" required>
+            <span class="form__field-name">Ваше имя*</span>
+            <input type="text" name="name" placeholder="Ваше имя" data-validate required>
             <span data-error></span>
           </label>
           <label class="form__field-wrap">
-            <span class="form__field-name">Электронная почта</span>
+            <span class="form__field-name">Электронная почта*</span>
             <input type="text" name="email" placeholder="Введите адрес электронной почты" data-validate="email" required>
             <span data-error></span>
           </label>
           <label class="form__field-wrap">
-            <span class="form__field-name">Пароль</span>
-            <input type="password" placeholder="Введите пароль" name="password" required>
+            <span class="form__field-name">Пароль*</span>
+            <input type="password" placeholder="Введите пароль" name="password" data-validate required>
             <span data-error></span>
           </label>
           <label class="form__field-wrap">
-            <span class="form__field-name">Повторите пароль</span>
-            <input type="password" placeholder="Повторите пароль" name="repeat-password" required>
+            <span class="form__field-name">Повторите пароль*</span>
+            <input type="password" placeholder="Повторите пароль" name="repeat-password" data-validate required>
             <span data-error></span>
           </label>
           <label class="form__checkbox-wrap">
-            <input class="visually-hidden" type="checkbox" name="agreement" required>
+            <input class="visually-hidden" type="checkbox" name="agreement" data-validate required>
             <span class="checkbox-item"></span>
             <span>Нажимая кнопку вы даете согласие на обработку персональных данных и соглашаетесь с <a class="privacy-policy-link link" href="#!" data-modal-open="privacy-policy">политикой конфиденциальности.</a></span>
           </label>
@@ -4800,26 +4800,26 @@
           </div>
         </div>
 
-        <form class="form form--fast-order" method="post" action="https://jsonplaceholder.typicode.com/posts" autocomplete="on">
+        <form class="form form--feedback" method="post" action="https://jsonplaceholder.typicode.com/posts" autocomplete="on">
           <div class="feedback-modal__rating">
             <span>Kачество</span>
             <fieldset class="rating">
               <legend>Звездный рейтинг</legend>
               <div class="group">
-                <input id="star-1" type="radio" name="rating" value="1" checked>
-                <label for="star-1" aria-label="1 звезда"></label>
+                <input id="star-1qual" type="radio" name="rating-quality" value="1" checked>
+                <label for="star-1qual" aria-label="1 звезда"></label>
 
-                <input id="star-2" type="radio" name="rating" value="2">
-                <label for="star-2" aria-label="2 звезды"></label>
+                <input id="star-2qual" type="radio" name="rating-quality" value="2">
+                <label for="star-2qual" aria-label="2 звезды"></label>
 
-                <input id="star-3" type="radio" name="rating" value="3">
-                <label for="star-3" aria-label="3 звезды"></label>
+                <input id="star-3qual" type="radio" name="rating-quality" value="3">
+                <label for="star-3qual" aria-label="3 звезды"></label>
 
-                <input id="star-4" type="radio" name="rating" value="4">
-                <label for="star-4" aria-label="4 звезды"></label>
+                <input id="star-4qual" type="radio" name="rating-quality" value="4">
+                <label for="star-4qual" aria-label="4 звезды"></label>
 
-                <input id="star-5" type="radio" name="rating" value="5">
-                <label for="star-5" aria-label="5 звезд"></label>
+                <input id="star-5qual" type="radio" name="rating-quality" value="5">
+                <label for="star-5qual" aria-label="5 звезд"></label>
               </div>
             </fieldset>
           </div>
@@ -4869,7 +4869,7 @@
           </div>
           <label class="form__field-wrap form__field-wrap--name">
             <span class="form__field-name">Ваше имя*</span>
-            <input type="text" placeholder="Введите ваше имя" name="user-name" required>
+            <input type="text" placeholder="Введите ваше имя" name="user-name" data-validate required>
             <span data-error></span>
           </label>
           <label class="form__field-wrap form__field-comment">
