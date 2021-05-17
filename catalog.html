@@ -4094,7 +4094,22 @@
     <h2 class="filters__caption">Фильтр</h2>
     <div class="filters__fieldset">
       <div class="filters__title filters__title--price filters__title-active arrow arrow--down">Цена</div>
-      <double-range class="filters__list" min="1000" max="100000" step="1000" from="1000" to="30000"></double-range>
+      <div class="filters__list double-range" data-min="1000" data-max="100000" data-step="1000" data-low="20000" data-high="50000">
+        <fieldset class="double-range-inner">
+          <legend class="visually-hidden">диапазон цен</legend>
+          <output data-key="low" data-value="">От</output>
+          <output data-key="high" data-value="">До</output>
+          <div class="range-wrap">
+            <div class="track"></div>
+            <label class="thumb" data-key="low" aria-label="минимальное значение">
+              <input class="visually-hidden" type="range" name="value_from" data-key="low">
+            </label>
+            <label class="thumb" data-key="high" aria-label="максимальное значение">
+              <input class="visually-hidden" type="range" name="value_to" data-key="high">
+            </label>
+          </div>
+        </fieldset>
+      </div>
     </div>
 
     <label class="filters__item sort-fieldset-checkbox filters__single">
@@ -4798,7 +4813,7 @@
 
         </div>
 
-        <div class="product-card__img">
+        <div class="product-card__img fast-order-img">
           
   <picture>
     <!-- 1x-179px/108px 2x-358px/216px -->
@@ -4901,7 +4916,7 @@
 
         </div>
 
-        <div class="product-card__img">
+        <div class="product-card__img fast-order-img">
           
   <picture>
     <!-- 1x-179px/108px 2x-358px/216px -->
@@ -4998,7 +5013,7 @@
 
         </div>
 
-        <div class="product-card__img">
+        <div class="product-card__img fast-order-img">
           
   <picture>
     <!-- 1x-179px/108px 2x-358px/216px -->
@@ -5101,7 +5116,7 @@
 
         </div>
 
-        <div class="product-card__img">
+        <div class="product-card__img fast-order-img">
           
   <picture>
     <!-- 1x-179px/108px 2x-358px/216px -->
@@ -5204,7 +5219,7 @@
 
         </div>
 
-        <div class="product-card__img">
+        <div class="product-card__img fast-order-img">
           
   <picture>
     <!-- 1x-179px/108px 2x-358px/216px -->
@@ -5301,7 +5316,7 @@
 
         </div>
 
-        <div class="product-card__img">
+        <div class="product-card__img fast-order-img">
           
   <picture>
     <!-- 1x-179px/108px 2x-358px/216px -->
@@ -5404,7 +5419,7 @@
 
         </div>
 
-        <div class="product-card__img">
+        <div class="product-card__img fast-order-img">
           
   <picture>
     <!-- 1x-179px/108px 2x-358px/216px -->
@@ -5507,7 +5522,7 @@
 
         </div>
 
-        <div class="product-card__img">
+        <div class="product-card__img fast-order-img">
           
   <picture>
     <!-- 1x-179px/108px 2x-358px/216px -->
@@ -5657,7 +5672,7 @@
           </label>
         </div>
           
-            <div class="product-card__img" data-empty="Товар на фотосессии"></div>
+            <div class="product-card__img fast-order-img" data-empty="Товар на фотосессии"></div>
             
         <div class="product-card__info">
           <small class="product-card__name">Смарт-часы</small>
@@ -5712,7 +5727,7 @@
           </label>
         </div>
           
-              <div class="product-card__img">
+              <div class="product-card__img fast-order-img">
                 
   <picture>
     <!-- 1x-179px/108px 2x-358px/216px -->
@@ -5780,7 +5795,7 @@
           </label>
         </div>
           
-              <div class="product-card__img">
+              <div class="product-card__img fast-order-img">
                 
   <picture>
     <!-- 1x-179px/108px 2x-358px/216px -->
@@ -5854,7 +5869,7 @@
           </label>
         </div>
           
-              <div class="product-card__img">
+              <div class="product-card__img fast-order-img">
                 
   <picture>
     <!-- 1x-179px/108px 2x-358px/216px -->
@@ -5928,7 +5943,7 @@
           </label>
         </div>
           
-              <div class="product-card__img">
+              <div class="product-card__img fast-order-img">
                 
   <picture>
     <!-- 1x-179px/108px 2x-358px/216px -->
@@ -5996,7 +6011,7 @@
           </label>
         </div>
           
-              <div class="product-card__img">
+              <div class="product-card__img fast-order-img">
                 
   <picture>
     <!-- 1x-179px/108px 2x-358px/216px -->
@@ -6070,7 +6085,7 @@
           </label>
         </div>
           
-              <div class="product-card__img">
+              <div class="product-card__img fast-order-img">
                 
   <picture>
     <!-- 1x-179px/108px 2x-358px/216px -->
@@ -6144,7 +6159,7 @@
           </label>
         </div>
           
-              <div class="product-card__img">
+              <div class="product-card__img fast-order-img">
                 
   <picture>
     <!-- 1x-179px/108px 2x-358px/216px -->
