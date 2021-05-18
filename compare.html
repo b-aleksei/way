@@ -3722,7 +3722,7 @@
       </li>
     
   </ul>
-  <a href="catalog.html" class="aside__more">
+  <a href="catalogmain.html" class="aside__more">
     
   <svg  width="24" height="24">
     <use href="#icon-circles"></use>
@@ -3823,6 +3823,14 @@
 
                 Выход
               </button>
+            </div>
+          </div>
+          <div class="header__additional-menu">
+            <div>
+              <ul>
+                <li><a class="link" href="#!">Вход</a></li>
+                <li><a class="link" href="#!">Регистрация</a></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -5153,7 +5161,7 @@
           <label class="form__checkbox-wrap">
             <input class="visually-hidden" type="checkbox" name="agreement" data-validate required>
             <span class="checkbox-item"></span>
-            <span>Нажимая кнопку вы даете согласие на обработку персональных данных и соглашаетесь с <a class="privacy-policy-link link" href="#!" data-modal-open="privacy-policy">политикой конфиденциальности.</a></span>
+            <span>Нажимая кнопку вы даете согласие на обработку персональных данных и соглашаетесь с <a class="privacy-policy-link link" href="#!">политикой конфиденциальности.</a></span>
           </label>
           <button class="form__submit btn btn-purple" type="submit">Заказать</button>
           <a class="form__link modal-close-mobile" href="#!" data-modal-close="fast-order">Вернуться назад</a>
@@ -5199,12 +5207,13 @@
           <label class="form__checkbox-wrap">
             <input class="visually-hidden" type="checkbox" name="agreement" data-validate required>
             <span class="checkbox-item"></span>
-            <span>Нажимая кнопку вы даете согласие на обработку персональных данных и соглашаетесь с <a class="privacy-policy-link link" href="#!" data-modal-open="privacy-policy">политикой конфиденциальности.</a></span>
+            <span>Нажимая кнопку вы даете согласие на обработку персональных данных и соглашаетесь с <a class="privacy-policy-link link" href="#!">политикой конфиденциальности.</a></span>
           </label>
 
           <button class="form__submit btn btn-purple form__btn-register" type="submit">Регистрация</button>
         </form>
         <div class="modal-login-footer">
+          <p>Уже зарегистрированы? <a class="form__link" href="#!" data-modal-open="modal-login">Авторизоваться</a></p>
           <strong>Войти через социальные сети:</strong>
           <ul class="social-icons">
             
@@ -5279,16 +5288,6 @@
 
 
 
-      <div id="privacy-policy" class="modal privacy-policy" aria-hidden="true">
-  <div class="modal-wrap">
-    <div class="modal-body privacy-policy__body" >
-      <h2>Политика конфиденциальности</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aut commodi cum delectus ducimus eum, expedita id illum ipsa laboriosam magni minus modi molestias nesciunt odio officia omnis placeat possimus praesentium quae quo ratione recusandae reprehenderit sit ullam veritatis voluptate voluptatem? Ab aliquam atque consequatur culpa cum distinctio doloremque ducimus expedita illo incidunt iusto laudantium mollitia placeat provident quasi repudiandae sapiente, sequi similique sit suscipit tenetur unde veniam vitae. Ab at consequatur, corporis deleniti esse, ex excepturi hic iure modi, neque nisi unde velit? Aperiam asperiores et excepturi fugiat fugit laudantium, magni molestiae natus placeat praesentium quibusdam reiciendis suscipit tempore? Commodi dicta fuga inventore ipsum nam natus nulla porro quos voluptates? Ad aliquid aperiam doloremque error et facere illo impedit incidunt ipsa libero maiores minus nemo nobis placeat quasi saepe sint velit, vitae. Ab accusamus aliquid asperiores aspernatur aut blanditiis commodi consectetur cumque delectus dignissimos dolore doloribus est ex facilis fuga fugiat illo illum inventore ipsa iste laboriosam minima molestias nulla optio quae quas quasi qui quibusdam quisquam rem repudiandae saepe, sed sequi sunt ullam veniam voluptate. Beatae commodi consectetur corporis culpa distinctio eum ipsa laboriosam magni natus, nostrum odio officiis optio quasi qui, repellat saepe sed vel vero voluptas!</p>
-      <button type="button" class="modal-close" data-modal-close="privacy-policy" aria-label="закрыть"></button>
-    </div>
-  </div>
-</div>
-
       <div id="modal-recover" class="modal modal-from-right" aria-hidden="true">
   <div class="modal-wrap submenu-block-desktop">
     <div class="form-wrap modal-body" >
@@ -5347,7 +5346,7 @@
           <label class="form__checkbox-wrap">
             <input class="visually-hidden" type="checkbox" name="agreement" data-validate required>
             <span class="checkbox-item"></span>
-            <span>Нажимая кнопку вы даете согласие на обработку персональных данных и соглашаетесь с <a class="privacy-policy-link link" href="#!" data-modal-open="privacy-policy">политикой конфиденциальности.</a></span>
+            <span>Нажимая кнопку вы даете согласие на обработку персональных данных и соглашаетесь с <a class="privacy-policy-link link" href="#!">политикой конфиденциальности.</a></span>
           </label>
           <button class="form__submit btn btn-purple" type="submit">Перезвонить</button>
         </form>
@@ -5421,7 +5420,7 @@
         <h3 class="menu-title">Спасибо!</h3>
       </div>
       <div class="modal-main success-order__main">
-        <p class="success-order__text">Ваш заказ успешно оформлен. В ближайшее время мы свяжемся с вами для уточнения деталей</p>
+        <p class="success-order__text">Форма успешно отправлена</p>
         <div class="modal-login-footer">
           <strong>Следи за нами в соц. сетях:</strong>
           <ul class="social-icons">
@@ -5512,7 +5511,7 @@
         <h3 class="menu-title">Узнать о поступлении</h3>
       </div>
       <div class="modal-main">
-        <form class="form" method="post" action="https://jsonplaceholder.typicode.com/posts" autocomplete="on">
+        <form class="form form--subscribe" method="post" action="https://jsonplaceholder.typicode.com/posts" autocomplete="on">
           <p>Оставьте почту и мы сообщим, когда товар появится в наличии</p>
           <label class="form__field-wrap">
             <span class="form__field-name">Электронная почта</span>
@@ -5520,9 +5519,9 @@
             <span data-error></span>
           </label>
           <label class="form__checkbox-wrap">
-            <input class="visually-hidden" type="checkbox" name="agreement" required>
+            <input class="visually-hidden" type="checkbox" name="agreement" data-validate required>
             <span class="checkbox-item"></span>
-            <span>Мы не передаем ваши данные 3-им лицам. Нажимая кнопку вы даете согласие на обработку персональных данных и соглашаетесь с <a class="privacy-policy-link link" href="#!" data-modal-open="privacy-policy">политикой конфиденциальности.</a></span>
+            <span>Мы не передаем ваши данные 3-им лицам. Нажимая кнопку вы даете согласие на обработку персональных данных и соглашаетесь с <a class="privacy-policy-link link" href="#!">политикой конфиденциальности.</a></span>
           </label>
           <button class="form__submit btn btn-purple form__btn-register" type="submit">Подписаться</button>
         </form>
