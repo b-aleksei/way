@@ -4173,8 +4173,10 @@
         <p class="product-card-desc">Apple MacBook Air 13 дисплей Retina с технологией True Tone Mid 2019 MVFL2  (i51600/8Gb/256Gb SSD) EU (Уцененный)</p>
         <p class="card-preview__assets">В наличии</p>
         <div class="card-preview__for-desktop">
-          <div class="star-rating star-rating--4"></div>
-          <span class="card-preview__feedback">243 отзыва</span>
+          <a class="card-preview__rating-anchor anchor-link" href="#feedback-tab">
+            <span class="star-rating star-rating--4"></span>
+            <span class="card-preview__feedback">243 отзыва</span>
+          </a>
           <div class="product-card__icons">
             <label class="product-card__icon product-card__icon--equal" aria-label="добавить к сравнению">
               <input class="visually-hidden product-card__options" type="checkbox" name="equal">
@@ -4213,10 +4215,10 @@
       </div>
       <div class="card-preview__buy">
         <div class="card-preview__buy-wrap">
-          <button class="btn btn-purple product-card__buy" type="button">В корзину</button>
+          <button class="btn btn-purple product-card__buy add-to-cart" type="button"><span class="counter counter--red">В корзину</span></button>
           <button class="btn btn-white product-card__buy" type="button" data-modal-open="fast-order">Купить в один клик</button>
         </div>
-        <a class="card-preview__credit" href="#"><span>В кредит/рассрочку</span> от <span>34 567</span> руб. в мес</a>
+        <a class="card-preview__credit" href="#"><span>В кредит/рассрочку&nbsp;</span>от&nbsp;<span>34 567&nbsp;</span> руб. в мес</a>
       </div>
 
       <div class="card-preview__footer">
@@ -4251,7 +4253,7 @@
             </div>
           </div>
         </div>
-        <a class="card-preview__all-features" href="#features">Посмотреть все характеристики</a>
+        <a class="card-preview__all-features anchor-link" href="#features-tab">Посмотреть все характеристики</a>
         <p class="card-preview__assets">В наличии</p>
       </div>
     </div>
@@ -4372,17 +4374,14 @@
               <b class="set-cards__price">32 230₽</b>
               <s class="set-cards__old-price">53 999₽</s>
             </div>
-            <div class="set-cards__btn-wrap">
-              <button class="set-cards__btn set-cards__btn--complex btn btn-purple" type="button">
-                
+            <button class="set-cards__btn set-cards__btn--complex btn btn-purple add-to-cart" type="button">
+              
   <svg  width="24" height="24">
     <use href="#icon-cart"></use>
   </svg>
 
-                Купить комплект
-              </button>
-              <button class="set-cards__btn btn btn-white" type="button">Купить в 1 клик</button>
-            </div>
+              <span class="counter counter--red">Купить комплект</span>
+            </button>
           </div>
         </div>
       </div>
@@ -4972,7 +4971,7 @@
     <div class="card-main__accordion accordion">
       
         <h3 class="card-main__accordion-title accordion__title arrow arrow--down "
-            
+             
         >
           О товаре
           
@@ -5025,7 +5024,7 @@
         </div>
       
         <h3 class="card-main__accordion-title accordion__title arrow arrow--down "
-            id=features
+            id=features-tab 
         >
           Характеристики
           
@@ -5066,7 +5065,7 @@
         </div>
       
         <h3 class="card-main__accordion-title accordion__title arrow arrow--down "
-            
+             id=feedback-tab
         >
           Отзывы
           
@@ -5190,7 +5189,7 @@
         </div>
       
         <h3 class="card-main__accordion-title accordion__title arrow arrow--down card-main__accordion-review"
-            
+             
         >
           Обзоры
           
