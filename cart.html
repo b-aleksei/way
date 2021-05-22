@@ -3786,13 +3786,12 @@
       </nav>
 
       <div class="header__interaсtive-wrap">
-        <a class="header__btn header__btn--location arrow arrow--down" href="#!" data-modal-open="location">
+        <a class="header__btn header__btn--location arrow arrow--down" data-city="Санкт-Петербург" href="#!" data-modal-open="location">
           
   <svg  width="24" height="24">
     <use href="#icon-location"></use>
   </svg>
 
-          <span>Санкт-Петербург</span>
         </a>
         <div class="header__btn header__btn--sign">
           <a href="#!" data-modal-open="modal-login">
@@ -3835,7 +3834,7 @@
           </div>
         </div>
         <a id="header-equal" class="header__btn header__btn-compare header__btn--equal" href="compare.html">
-         <span class="counter counter--red">
+         <span class="counter counter--red" data-count="3">
   <svg  width="24" height="24">
     <use href="#icon-equal"></use>
   </svg>
@@ -3843,7 +3842,7 @@
           Сравнить
         </a>
         <a id="header-favorite" class="header__btn header__btn-compare header__btn--favorite" href="favorite.html">
-          <span class="counter counter--red">
+          <span class="counter counter--red" data-count="4">
   <svg  width="24" height="24">
     <use href="#icon-favorite"></use>
   </svg>
@@ -3932,7 +3931,7 @@
     <main>
       
   
-  <div class="bread-crumbs bread-crumbs--cart">
+  <div class="bread-crumbs ">
     
       
           <a href="index.html">Главная</a>
@@ -3948,35 +3947,42 @@
     <h1 class="cart__title  title wrapper">Корзина</h1>
     <div class="cart-products">
       <div class="cart-products__preview">
-        <div class="cart-products__caption">
-          <span>товары</span>
-          <span>кол-во</span>
-          <span>Очистить список
-            <button type="button">
-              
-  <svg  width="24" height="24">
-    <use href="#icon-delete"></use>
-  </svg>
 
-            </button>
-          </span>
-        </div>
         <div class="cart-products__list">
+          <div class="cart-products__caption">
+            <span class="table-cell">товары</span>
+            <span class="table-cell"></span>
+            <span class="table-cell">кол-во</span>
+            <span class="table-cell"></span>
+            <span class="table-cell">
+              <button type="button" class="cart-products__clear-cart">
+                Очистить список
+                
+  <svg  width="24" height="24">
+    <use href="#icon-delete"></use>
+  </svg>
+
+              </button>
+            </span>
+
+          </div>
           
             <div class="cart-products__item wrapper">
-              <div class="cart-products__img">
+              <div class="table-cell cart-products__img">
                 <img src="img/content/phone-cart.jpg" width="55" height="65" alt="айфон 8">
               </div>
-              <div class="cart-products__name">
+              <div class="table-cell cart-products__name">
                 <p>Apple MacBook Air 13 дисплей Retina с технологией True Tone Mid 2019 MVFL2 (i51600/8Gb/256Gb SSD) EU</p>
                 <small>Арт. 064206</small>
               </div>
-              <div class="cart-products__count order-element-count">
-                <button class="order-element__btn order-element__increase" type="button">+</button>
-                <span class="order-element__total">1</span>
-                <button class="order-element__btn order-element__decrease" type="button">-</button>
+              <div class="table-cell cart-products__count">
+                <div class="order-element-count">
+                  <button class="order-element__btn order-element__decrease" type="button">-</button>
+                  <span class="order-element__total">1</span>
+                  <button class="order-element__btn order-element__increase" type="button">+</button>
+                </div>
               </div>
-              <div class="cart-products__action">
+              <div class="table-cell cart-products__action">
                 <label class="cart-products__favorite-btn">
                   <input class="visually-hidden" type="checkbox" name="favorite">
                   
@@ -3993,26 +3999,28 @@
 
                 </button>
               </div>
-              <div class="cart-products__price">
-                <span class="cart-products__new-price">112 276₽</span>
-                <s class="cart-products__old-price">113 999₽</s>
+              <div class="table-cell cart-products__price">
+                <span class="cart-products__new-price" data-price="112 276₽">112 276₽</span>
+                <s class="cart-products__old-price" data-price="113 999₽">113 999₽</s>
               </div>
             </div>
           
             <div class="cart-products__item wrapper">
-              <div class="cart-products__img">
+              <div class="table-cell cart-products__img">
                 <img src="img/content/phone-cart.jpg" width="55" height="65" alt="айфон 8">
               </div>
-              <div class="cart-products__name">
-                <p>Apple MacBook Air 13 дисплей Retina с технологией True Tone Mid 2019 MVFL2 (i51600/8Gb/256Gb SSD) EU</p>
+              <div class="table-cell cart-products__name">
+                <p>Apple MacBook</p>
                 <small>Арт. 064206</small>
               </div>
-              <div class="cart-products__count order-element-count">
-                <button class="order-element__btn order-element__increase" type="button">+</button>
-                <span class="order-element__total">1</span>
-                <button class="order-element__btn order-element__decrease" type="button">-</button>
+              <div class="table-cell cart-products__count">
+                <div class="order-element-count">
+                  <button class="order-element__btn order-element__decrease" type="button">-</button>
+                  <span class="order-element__total">1</span>
+                  <button class="order-element__btn order-element__increase" type="button">+</button>
+                </div>
               </div>
-              <div class="cart-products__action">
+              <div class="table-cell cart-products__action">
                 <label class="cart-products__favorite-btn">
                   <input class="visually-hidden" type="checkbox" name="favorite">
                   
@@ -4029,51 +4037,49 @@
 
                 </button>
               </div>
-              <div class="cart-products__price">
-                <span class="cart-products__new-price">112 276₽</span>
-                <s class="cart-products__old-price">113 999₽</s>
+              <div class="table-cell cart-products__price">
+                <span class="cart-products__new-price" data-price="112 276₽">112 276₽</span>
+                <s class="cart-products__old-price" data-price="113 999₽">113 999₽</s>
               </div>
             </div>
           
         </div>
       </div>
-      <div class="cart-products__amount">
-        <div class="cart-products__amount-top wrapper">
-          <fieldset class="cart-products__promo">
-            <legend class="visually-hidden">Промокод</legend>
-            <div class="cart-products__has-promo">Есть промокод?</div>
-            <label class="cart-products__promo-accept">
-              <input class="visually-hidden" type="checkbox" name="promo">
-              <span>Применить</span>
-            </label>
-          </fieldset>
-          <div class="cart-products__initial-price">
-            <span class="cart-products__amount-name" data-count="2">товар(а) на сумму</span>
-            <span class="cart-products__new-price">112 276₽</span>
+      <div class="cart-products__amount-wrap">
+        <div class="cart-products__amount">
+          <div class="cart-products__amount-top wrapper">
+            <div class="cart-products__promo">
+              <div class="cart-products__promo-btn cart-products__has-promo active">Есть промокод?</div>
+              <label class="cart-products__promo-btn cart-products__promo-accept">
+                <input class="visually-hidden" type="checkbox" name="promo">
+                <span>Применить</span>
+              </label>
+            </div>
+            <div class="cart-products__initial-price">
+              <span class="cart-products__amount-name" data-count="2">товар(а) на сумму</span>
+              <span class="cart-products__amount-price">112 276₽</span>
+            </div>
+          </div>
+          <div class="cart-products__amount-middle">
+            <span>Скидка</span>
+            <s>99 999₽</s>
+          </div>
+          <div class="cart-products__amount-bottom wrapper">
+            <div class="cart-products__total-wrap">
+              <b>Итого</b>
+              <span class="cart-products__total">99 999₽</span>
+            </div>
+            <button class="cart-products__btn-order btn btn-purple" type="button">Перейти к оформлению</button>
+            <p>Оформляя заказ вы подтверждаете свое согласие с нашими <a class="link" href="#">условиями покупки</a> в интернет-магазине</p>
+            <p>После осуществления заказа мы свяжемся с вами, чтобы уточнить все детали</p>
+            <p>*Итоговая стоимость заказа рассчитана без учета стоимости доставки, информацию о стоимости доставки предоставит менеджер при звонке</p>
           </div>
         </div>
-
-        <div class="cart-products__amount-middle">
-          <span>Скидка</span>
-          <s>99 999₽</s>
-        </div>
-        <div class="cart-products__amount-bottom wrapper">
-          <div>
-            <b>Итого</b>
-            <span class="cart-products__total">99 999₽</span>
-          </div>
-          <button class="cart-products__btn-order btn btn-purple" type="button">Перейти к оформлению</button>
-          <p>Оформляя заказ вы подтверждаете свое согласие с нашими <a class="link" href="#">условиями покупки</a> в интернет-магазине</p>
-          <p>После осуществления заказа мы свяжемся с вами, чтобы уточнить все детали</p>
-          <p>*Итоговая стоимость заказа рассчитана без учета стоимости доставки, информацию о стоимости доставки предоставит менеджер при звонке</p>
-        </div>
-
       </div>
-
     </div>
   </section>
 
-  <section class="product-type card-main__slider">
+  <section class="cart-products-slider product-type card-main__slider">
     <div class="product-type__header">
       <h2><a class="link" href="#!">С этим обычно покупают</a></h2>
     </div>
