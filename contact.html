@@ -7,12 +7,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="format-detection" content="telephone=no">
   <meta name="format-detection" content="email=no">
-  <title>Избранное</title>
+  <title>Контакты</title>
   <link rel="icon" href="favicon.ico">
   
     <link rel="preload" href="fonts/ttnorms-medium.woff2" as="font" crossorigin="anonymous">
   
-<script defer src="js/common.js"></script><script defer src="js/favorite.js"></script><link href="css/common.css" rel="stylesheet"><link href="css/favorite.css" rel="stylesheet"></head>
+<script defer src="js/common.js"></script><script defer src="js/contact.js"></script><link href="css/common.css" rel="stylesheet"><link href="css/contact.css" rel="stylesheet"></head>
 <body >
   
     <div style="display:none" id="svg-icons">
@@ -3935,7 +3935,8 @@
     
     <main>
       
-  
+  <div class="wrapper">
+    
   <div class="bread-crumbs ">
     
       
@@ -3943,541 +3944,63 @@
       
     
       
-        <a href="#" aria-current="location">Избранное</a>
+        <a href="#" aria-current="location">Контакты</a>
         
     
   </div>
 
-  <div class="compare favorite">
-    <div class="compare__head">
-      <h1 class="subtitle">Избранное<sup class="title-counter">156</sup></h1>
-      <button class="compare__clear-list" type="button">Очистить список
-      
-  <svg  width="32" height="32">
-    <use href="#icon-delete"></use>
-  </svg>
 
-      </button>
+    <h2 class="section_title">Контакты</h2>
+
+    <h3 class="title">Пункт самовывоза</h3>
+    <p class="address">
+      <svg><use xlink:href="img/sprite.svg#city_icon"></use></svg>
+      Санкт-Петербург станция метро Спортивная, Ждановская набережная, д. 7
+      <span>Eжедневно, по будним дням с 10.00 до 21.00, по выходным с 11.00 до 20.00 </span>
+    </p>
+    <table class="ip_table">
+      <tbody><tr>
+        <td>Наименование ИП:</td>
+        <td>Демидова Л.И.</td>
+      </tr>
+      <tr>
+        <td>ОГРН:</td>
+        <td>304784725700099 (13.09.2004 г.)</td>
+      </tr>
+      <tr>
+        <td>ИНН:</td>
+        <td>781128388406</td>
+      </tr>
+      </tbody></table>
+    <div class="left_col">
+      <h3 class="title">Многоканальные телефоны:</h3>
+      <ul class="tel_list">
+        <li><a href="tel:88124486811" class="with_letter_spacing">8 (812) 448-68-11</a></li>
+        <li><a href="tel:88003333224">8 (800) 333-32-24</a></li>
+      </ul>
+      <button type="button" class="main_btn" data-toggle="modal" data-target="#callback_2_modal">Написать нам</button>
     </div>
-
-
-    <div class="compare__category-slider slider-container">
-      <div class="compare__category swiper-wrapper">
-        
-          <label class="compare__category-item swiper-slide">
-            <input class="visually-hidden" type="radio" name="category">
-            <span class="compare__category-type btn">
-              Умные часы
-              <span role="button" class="btn-close remove-compare-slide"></span>
-              <sup class="title-counter">42</sup>
-            </span>
-          </label>
-        
-          <label class="compare__category-item swiper-slide">
-            <input class="visually-hidden" type="radio" name="category">
-            <span class="compare__category-type btn">
-              Смартфоны
-              <span role="button" class="btn-close remove-compare-slide"></span>
-              <sup class="title-counter">42</sup>
-            </span>
-          </label>
-        
-          <label class="compare__category-item swiper-slide">
-            <input class="visually-hidden" type="radio" name="category">
-            <span class="compare__category-type btn">
-              Телевизоры
-              <span role="button" class="btn-close remove-compare-slide"></span>
-              <sup class="title-counter">42</sup>
-            </span>
-          </label>
-        
-          <label class="compare__category-item swiper-slide">
-            <input class="visually-hidden" type="radio" name="category">
-            <span class="compare__category-type btn">
-              Наушники и Гарнитуры
-              <span role="button" class="btn-close remove-compare-slide"></span>
-              <sup class="title-counter">42</sup>
-            </span>
-          </label>
-        
-          <label class="compare__category-item swiper-slide">
-            <input class="visually-hidden" type="radio" name="category">
-            <span class="compare__category-type btn">
-              Проекторы
-              <span role="button" class="btn-close remove-compare-slide"></span>
-              <sup class="title-counter">42</sup>
-            </span>
-          </label>
-        
-      </div>
-    </div>
-
-    <div class="favorite__main">
-      <div class="favorite__options">
-        <fieldset class="sort-fieldset">
-          <legend>Наличие товаров</legend>
-          <label class="sort-fieldset-radio">
-            <input type="radio" name="param">
-            <span class="custom-radio"></span>
-            <span>Неважно</span>
-          </label>
-          <label class="sort-fieldset-radio">
-            <input type="radio" name="param">
-            <span class="custom-radio"></span>
-            <span>В наличии</span>
-          </label>
-          <label class="sort-fieldset-radio">
-            <input type="radio" name="param">
-            <span class="custom-radio"></span>
-            <span>Нет в наличии</span>
-          </label>
-        </fieldset>
-        <fieldset class="sort-fieldset">
-          <legend>Сортировка</legend>
-          <label class="sort-fieldset-radio">
-            <input type="radio" name="param">
-            <span class="custom-radio"></span>
-            <span>Сначала новые</span>
-          </label>
-          <label class="sort-fieldset-radio">
-            <input type="radio" name="param">
-            <span class="custom-radio"></span>
-            <span>С высоким рейтингом</span>
-          </label>
-          <label class="sort-fieldset-radio">
-            <input type="radio" name="param">
-            <span class="custom-radio"></span>
-            <span>По цене</span>
-          </label>
-        </fieldset>
-      </div>
-      <div class="favorite__cards">
-        
-          <div class="product-card-wrap">
-            <div data-vendor-code="64201" class="product-card product-card--sm-icon">
-              <div class="product-card__bonuses">
-                
-  <div class="bonus-icon priority-4">
-    <img src="img/content/icon/delivery.svg" width="70" height="70" alt="бонус">
-  </div>
-  <div class="bonus-icon priority-3">
-    <img src="img/content/icon/black-friday.svg" width="70" height="70" alt="бонус">
-  </div>
-  <div class="bonus-icon priority-0">
-    <img src="img/content/icon/best-seller.svg" width="70" height="70" alt="бонус">
-  </div>
-
-              </div>
-              <div class="product-card__icons">
-                <label class="product-card__icon product-card__icon--equal" aria-label="добавить к сравнению">
-                  <input class="visually-hidden product-card__options" type="checkbox" name="equal">
-                                      
-  <svg  width="16" height="16">
-    <use href="#icon-equal"></use>
-  </svg>
-
-                </label>
-                <button class="product-card__icon product-card-remove" type="button" aria-label="удалить">
-                                      
-  <svg  width="16" height="16">
-    <use href="#icon-delete"></use>
-  </svg>
-
-                </button>
-              </div>
-              <div class="product-card__img fast-order-img">
-                
-  <picture>
-    <!-- 1x-179px/108px 2x-358px/216px -->
-    <source type="image/webp" srcset="img/content/watch.webp 1x, img/content/watch@2x.webp 2x">
-    <img class=content-img src="img/content/watch.jpg" srcset="img/content/watch@2x.jpg 2x" width="179" height="108" alt="Apple watch" loading=lazy decoding=async>
-  </picture>
-
-              </div>
-              <div class="product-card__info">
-                <small class="product-card__name">Смарт-часы</small>
-                <p class="product-card-desc">Apple Watch 5 series 44mm+ремешек HERMES, макс. может быть в 3 строки для длинных названий</p>
-                <s class="product-card__old-price">53 999₽</s>
-                <span class="product-card__price">32 230₽</span>
-                <div class="product-card__buy-wrap">
-                  <button class="btn btn-purple compare__buy add-to-cart" type="button"><span class="counter counter--red">В корзину</span></button>
-                </div>
-              </div>
-            </div>
-          </div>
-        
-          <div class="product-card-wrap">
-            <div data-vendor-code="64202" class="product-card product-card--sm-icon">
-              <div class="product-card__bonuses">
-                
-  <div class="bonus-icon priority-5">
-    <img src="img/content/icon/gift.svg" width="70" height="70" alt="бонус">
-  </div>
-  <div class="bonus-icon priority-0">
-    <img src="img/content/icon/new.svg" width="70" height="70" alt="бонус">
-  </div>
-  <div class="bonus-icon priority-1">
-    <img src="img/content/icon/sale.svg" width="70" height="70" alt="бонус">
-  </div>
-
-              </div>
-              <div class="product-card__icons">
-                <label class="product-card__icon product-card__icon--equal" aria-label="добавить к сравнению">
-                  <input class="visually-hidden product-card__options" type="checkbox" name="equal">
-                                      
-  <svg  width="16" height="16">
-    <use href="#icon-equal"></use>
-  </svg>
-
-                </label>
-                <button class="product-card__icon product-card-remove" type="button" aria-label="удалить">
-                                      
-  <svg  width="16" height="16">
-    <use href="#icon-delete"></use>
-  </svg>
-
-                </button>
-              </div>
-              <div class="product-card__img fast-order-img">
-                
-  <picture>
-    <!-- 1x-179px/108px 2x-358px/216px -->
-    <source type="image/webp" srcset="img/content/phone-small.webp 1x, img/content/phone-small@2x.webp 2x">
-    <img class=content-img src="img/content/phone-small.jpg" srcset="img/content/phone-small@2x.jpg 2x" width="179" height="108" alt="Sumsung phone" loading=lazy decoding=async>
-  </picture>
-
-              </div>
-              <div class="product-card__info">
-                <small class="product-card__name">Смарт-часы</small>
-                <p class="product-card-desc">Apple Watch 5 series 44mm+ремешек HERMES, макс. может быть в 3 строки для длинных названий</p>
-                <s class="product-card__old-price">53 999₽</s>
-                <span class="product-card__price">32 230₽</span>
-                <div class="product-card__buy-wrap">
-                  <button class="btn btn-purple compare__buy add-to-cart" type="button"><span class="counter counter--red">В корзину</span></button>
-                </div>
-              </div>
-            </div>
-          </div>
-        
-          <div class="product-card-wrap">
-            <div data-vendor-code="64203" class="product-card product-card--sm-icon">
-              <div class="product-card__bonuses">
-                
-  <div class="bonus-icon priority-1">
-    <img src="img/content/icon/stock.svg" width="70" height="70" alt="бонус">
-  </div>
-  <div class="bonus-icon priority-3">
-    <img src="img/content/icon/cyber-monday.svg" width="70" height="70" alt="бонус">
-  </div>
-  <div class="bonus-icon priority-2">
-    <img src="img/content/icon/discount.svg" width="70" height="70" alt="бонус">
-  </div>
-
-              </div>
-              <div class="product-card__icons">
-                <label class="product-card__icon product-card__icon--equal" aria-label="добавить к сравнению">
-                  <input class="visually-hidden product-card__options" type="checkbox" name="equal">
-                                      
-  <svg  width="16" height="16">
-    <use href="#icon-equal"></use>
-  </svg>
-
-                </label>
-                <button class="product-card__icon product-card-remove" type="button" aria-label="удалить">
-                                      
-  <svg  width="16" height="16">
-    <use href="#icon-delete"></use>
-  </svg>
-
-                </button>
-              </div>
-              <div class="product-card__img fast-order-img">
-                
-  <picture>
-    <!-- 1x-179px/108px 2x-358px/216px -->
-    <source type="image/webp" srcset="img/content/watch.webp 1x, img/content/watch@2x.webp 2x">
-    <img class=content-img src="img/content/watch.jpg" srcset="img/content/watch@2x.jpg 2x" width="179" height="108" alt="Apple watch" loading=lazy decoding=async>
-  </picture>
-
-              </div>
-              <div class="product-card__info">
-                <small class="product-card__name">Смарт-часы</small>
-                <p class="product-card-desc">Apple Watch 5 series 44mm+ремешек HERMES, макс. может быть в 3 строки для длинных названий</p>
-                <s class="product-card__old-price">53 999₽</s>
-                <span class="product-card__price">32 230₽</span>
-                <div class="product-card__buy-wrap">
-                  <button class="btn btn-purple compare__buy add-to-cart" type="button"><span class="counter counter--red">В корзину</span></button>
-                </div>
-              </div>
-            </div>
-          </div>
-        
-          <div class="product-card-wrap">
-            <div data-vendor-code="64204" class="product-card product-card--sm-icon">
-              <div class="product-card__bonuses">
-                
-  <div class="bonus-icon priority-4">
-    <img src="img/content/icon/delivery.svg" width="70" height="70" alt="бонус">
-  </div>
-  <div class="bonus-icon priority-3">
-    <img src="img/content/icon/black-friday.svg" width="70" height="70" alt="бонус">
-  </div>
-  <div class="bonus-icon priority-0">
-    <img src="img/content/icon/best-seller.svg" width="70" height="70" alt="бонус">
-  </div>
-
-              </div>
-              <div class="product-card__icons">
-                <label class="product-card__icon product-card__icon--equal" aria-label="добавить к сравнению">
-                  <input class="visually-hidden product-card__options" type="checkbox" name="equal">
-                                      
-  <svg  width="16" height="16">
-    <use href="#icon-equal"></use>
-  </svg>
-
-                </label>
-                <button class="product-card__icon product-card-remove" type="button" aria-label="удалить">
-                                      
-  <svg  width="16" height="16">
-    <use href="#icon-delete"></use>
-  </svg>
-
-                </button>
-              </div>
-              <div class="product-card__img fast-order-img">
-                
-  <picture>
-    <!-- 1x-179px/108px 2x-358px/216px -->
-    <source type="image/webp" srcset="img/content/phone-small.webp 1x, img/content/phone-small@2x.webp 2x">
-    <img class=content-img src="img/content/phone-small.jpg" srcset="img/content/phone-small@2x.jpg 2x" width="179" height="108" alt="Sumsung phone" loading=lazy decoding=async>
-  </picture>
-
-              </div>
-              <div class="product-card__info">
-                <small class="product-card__name">Смарт-часы</small>
-                <p class="product-card-desc">Apple Watch 5 series 44mm+ремешек HERMES, макс. может быть в 3 строки для длинных названий</p>
-                <s class="product-card__old-price">53 999₽</s>
-                <span class="product-card__price">32 230₽</span>
-                <div class="product-card__buy-wrap">
-                  <button class="btn btn-purple compare__buy add-to-cart" type="button"><span class="counter counter--red">В корзину</span></button>
-                </div>
-              </div>
-            </div>
-          </div>
-        
-          <div class="product-card-wrap">
-            <div data-vendor-code="64205" class="product-card product-card--sm-icon">
-              <div class="product-card__bonuses">
-                
-  <div class="bonus-icon priority-5">
-    <img src="img/content/icon/gift.svg" width="70" height="70" alt="бонус">
-  </div>
-  <div class="bonus-icon priority-0">
-    <img src="img/content/icon/new.svg" width="70" height="70" alt="бонус">
-  </div>
-  <div class="bonus-icon priority-1">
-    <img src="img/content/icon/sale.svg" width="70" height="70" alt="бонус">
-  </div>
-
-              </div>
-              <div class="product-card__icons">
-                <label class="product-card__icon product-card__icon--equal" aria-label="добавить к сравнению">
-                  <input class="visually-hidden product-card__options" type="checkbox" name="equal">
-                                      
-  <svg  width="16" height="16">
-    <use href="#icon-equal"></use>
-  </svg>
-
-                </label>
-                <button class="product-card__icon product-card-remove" type="button" aria-label="удалить">
-                                      
-  <svg  width="16" height="16">
-    <use href="#icon-delete"></use>
-  </svg>
-
-                </button>
-              </div>
-              <div class="product-card__img fast-order-img">
-                
-  <picture>
-    <!-- 1x-179px/108px 2x-358px/216px -->
-    <source type="image/webp" srcset="img/content/watch.webp 1x, img/content/watch@2x.webp 2x">
-    <img class=content-img src="img/content/watch.jpg" srcset="img/content/watch@2x.jpg 2x" width="179" height="108" alt="Apple watch" loading=lazy decoding=async>
-  </picture>
-
-              </div>
-              <div class="product-card__info">
-                <small class="product-card__name">Смарт-часы</small>
-                <p class="product-card-desc">Apple Watch 5 series 44mm+ремешек HERMES, макс. может быть в 3 строки для длинных названий</p>
-                <s class="product-card__old-price">53 999₽</s>
-                <span class="product-card__price">32 230₽</span>
-                <div class="product-card__buy-wrap">
-                  <button class="btn btn-purple compare__buy add-to-cart" type="button"><span class="counter counter--red">В корзину</span></button>
-                </div>
-              </div>
-            </div>
-          </div>
-        
-          <div class="product-card-wrap">
-            <div data-vendor-code="64206" class="product-card product-card--sm-icon">
-              <div class="product-card__bonuses">
-                
-  <div class="bonus-icon priority-1">
-    <img src="img/content/icon/stock.svg" width="70" height="70" alt="бонус">
-  </div>
-  <div class="bonus-icon priority-3">
-    <img src="img/content/icon/cyber-monday.svg" width="70" height="70" alt="бонус">
-  </div>
-  <div class="bonus-icon priority-2">
-    <img src="img/content/icon/discount.svg" width="70" height="70" alt="бонус">
-  </div>
-
-              </div>
-              <div class="product-card__icons">
-                <label class="product-card__icon product-card__icon--equal" aria-label="добавить к сравнению">
-                  <input class="visually-hidden product-card__options" type="checkbox" name="equal">
-                                      
-  <svg  width="16" height="16">
-    <use href="#icon-equal"></use>
-  </svg>
-
-                </label>
-                <button class="product-card__icon product-card-remove" type="button" aria-label="удалить">
-                                      
-  <svg  width="16" height="16">
-    <use href="#icon-delete"></use>
-  </svg>
-
-                </button>
-              </div>
-              <div class="product-card__img fast-order-img">
-                
-  <picture>
-    <!-- 1x-179px/108px 2x-358px/216px -->
-    <source type="image/webp" srcset="img/content/phone-small.webp 1x, img/content/phone-small@2x.webp 2x">
-    <img class=content-img src="img/content/phone-small.jpg" srcset="img/content/phone-small@2x.jpg 2x" width="179" height="108" alt="Sumsung phone" loading=lazy decoding=async>
-  </picture>
-
-              </div>
-              <div class="product-card__info">
-                <small class="product-card__name">Смарт-часы</small>
-                <p class="product-card-desc">Apple Watch 5 series 44mm+ремешек HERMES, макс. может быть в 3 строки для длинных названий</p>
-                <s class="product-card__old-price">53 999₽</s>
-                <span class="product-card__price">32 230₽</span>
-                <div class="product-card__buy-wrap">
-                  <button class="btn btn-purple compare__buy add-to-cart" type="button"><span class="counter counter--red">В корзину</span></button>
-                </div>
-              </div>
-            </div>
-          </div>
-        
-          <div class="product-card-wrap">
-            <div data-vendor-code="64207" class="product-card product-card--sm-icon">
-              <div class="product-card__bonuses">
-                
-  <div class="bonus-icon priority-4">
-    <img src="img/content/icon/delivery.svg" width="70" height="70" alt="бонус">
-  </div>
-  <div class="bonus-icon priority-3">
-    <img src="img/content/icon/black-friday.svg" width="70" height="70" alt="бонус">
-  </div>
-  <div class="bonus-icon priority-0">
-    <img src="img/content/icon/best-seller.svg" width="70" height="70" alt="бонус">
-  </div>
-
-              </div>
-              <div class="product-card__icons">
-                <label class="product-card__icon product-card__icon--equal" aria-label="добавить к сравнению">
-                  <input class="visually-hidden product-card__options" type="checkbox" name="equal">
-                                      
-  <svg  width="16" height="16">
-    <use href="#icon-equal"></use>
-  </svg>
-
-                </label>
-                <button class="product-card__icon product-card-remove" type="button" aria-label="удалить">
-                                      
-  <svg  width="16" height="16">
-    <use href="#icon-delete"></use>
-  </svg>
-
-                </button>
-              </div>
-              <div class="product-card__img fast-order-img">
-                
-  <picture>
-    <!-- 1x-179px/108px 2x-358px/216px -->
-    <source type="image/webp" srcset="img/content/watch.webp 1x, img/content/watch@2x.webp 2x">
-    <img class=content-img src="img/content/watch.jpg" srcset="img/content/watch@2x.jpg 2x" width="179" height="108" alt="Apple watch" loading=lazy decoding=async>
-  </picture>
-
-              </div>
-              <div class="product-card__info">
-                <small class="product-card__name">Смарт-часы</small>
-                <p class="product-card-desc">Apple Watch 5 series 44mm+ремешек HERMES, макс. может быть в 3 строки для длинных названий</p>
-                <s class="product-card__old-price">53 999₽</s>
-                <span class="product-card__price">32 230₽</span>
-                <div class="product-card__buy-wrap">
-                  <button class="btn btn-purple compare__buy add-to-cart" type="button"><span class="counter counter--red">В корзину</span></button>
-                </div>
-              </div>
-            </div>
-          </div>
-        
-          <div class="product-card-wrap">
-            <div data-vendor-code="64208" class="product-card product-card--sm-icon">
-              <div class="product-card__bonuses">
-                
-  <div class="bonus-icon priority-5">
-    <img src="img/content/icon/gift.svg" width="70" height="70" alt="бонус">
-  </div>
-  <div class="bonus-icon priority-0">
-    <img src="img/content/icon/new.svg" width="70" height="70" alt="бонус">
-  </div>
-  <div class="bonus-icon priority-1">
-    <img src="img/content/icon/sale.svg" width="70" height="70" alt="бонус">
-  </div>
-
-              </div>
-              <div class="product-card__icons">
-                <label class="product-card__icon product-card__icon--equal" aria-label="добавить к сравнению">
-                  <input class="visually-hidden product-card__options" type="checkbox" name="equal">
-                                      
-  <svg  width="16" height="16">
-    <use href="#icon-equal"></use>
-  </svg>
-
-                </label>
-                <button class="product-card__icon product-card-remove" type="button" aria-label="удалить">
-                                      
-  <svg  width="16" height="16">
-    <use href="#icon-delete"></use>
-  </svg>
-
-                </button>
-              </div>
-              <div class="product-card__img fast-order-img">
-                
-  <picture>
-    <!-- 1x-179px/108px 2x-358px/216px -->
-    <source type="image/webp" srcset="img/content/phone-small.webp 1x, img/content/phone-small@2x.webp 2x">
-    <img class=content-img src="img/content/phone-small.jpg" srcset="img/content/phone-small@2x.jpg 2x" width="179" height="108" alt="Sumsung phone" loading=lazy decoding=async>
-  </picture>
-
-              </div>
-              <div class="product-card__info">
-                <small class="product-card__name">Смарт-часы</small>
-                <p class="product-card-desc">Apple Watch 5 series 44mm+ремешек HERMES, макс. может быть в 3 строки для длинных названий</p>
-                <s class="product-card__old-price">53 999₽</s>
-                <span class="product-card__price">32 230₽</span>
-                <div class="product-card__buy-wrap">
-                  <button class="btn btn-purple compare__buy add-to-cart" type="button"><span class="counter counter--red">В корзину</span></button>
-                </div>
-              </div>
-            </div>
-          </div>
-        
-      </div>
+    <div class="right_col">
+      <h3 class="title">E-mail:</h3>
+      <ul class="email_list">
+        <li>
+          <a href="mailto:info@mediashop24.ru">info@mediashop24.ru</a>
+          <p>Общие вопросы</p>
+        </li>
+        <li>
+          <a href="mailto:info@mediashop24.ru">info@mediashop24.ru</a>
+          <p>Контроль качества обслуживания</p>
+        </li>
+        <li>
+          <a href="mailto:info@mediashop24.ru">info@mediashop24.ru</a>
+          <p>Закупки и партнерство</p>
+        </li>
+        <li>
+          <a href="mailto:info@mediashop24.ru">info@mediashop24.ru</a>
+          <p>Гениральный директор</p>
+        </li>
+      </ul>
+      <button type="button" class="main_btn only_mobile" data-toggle="modal" data-target="#callback_2_modal">Написать нам</button>
     </div>
   </div>
 
