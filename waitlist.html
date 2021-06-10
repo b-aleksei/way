@@ -4021,21 +4021,14 @@
             </button>
           </div>
           <div class="lk-wl__select-wrap">
-            <label class="form__select" aria-label="сортировка">
-              <span class="select-title">Сортировать:</span>
-              <span class="form__select-wrap lk-wl__sort arrow arrow--down">
-                <select name="time">
-                  <option value="sort" selected disabled>сортировка</option>
-                  <option value="new">Сначала новые</option>
-                  <option value="old">Сначала старые</option>
-                  <option value="hi">Сначала дорогие</option>
-                  <option value="low">Сначала дешевые</option>
-                </select>
-              </span>
-            </label>
+            <div class="lk-wl__sort">
+              <input id="old" class="visually-hidden" type="radio" value="old" name="sort">
+              <input id="new" class="visually-hidden" type="radio" value="new" name="sort" checked>
+              <label class="arrow arrow--down" for="old"><span class="sort-title">Сортировать:</span> <span class="for-desktop">Сначала новые</span><span class="for-mobile">Сортировка</span></label>
+              <label class="arrow arrow--up" for="new"><span class="sort-title">Сортировать:</span> <span class="for-desktop">Сначала новые</span><span class="for-mobile">Сортировка</span></label>
+            </div>
             <div class="lk-wl__wait-info"><span>4/8</span> товаров в ожидании</div>
           </div>
-
         </div>
         <div class="lk-wl__list">
           
