@@ -4194,6 +4194,10 @@
           </li>
         
           <li>
+            <a href="#!" data-modal-open="cancel-order">Отменить заказ</a>
+          </li>
+        
+          <li>
             <a href="#!" data-modal-open="modal-test">Поведение полей ввода Safari Mobile</a>
           </li>
         
@@ -4769,7 +4773,7 @@
         <h3 class="menu-title">Спасибо!</h3>
       </div>
       <div class="modal-main success-order__main">
-        <p class="success-order__text">Форма успешно отправлена</p>
+        <div class="success-order__text">Форма успешно отправлена</div>
         <div class="modal-login-footer">
           <strong>Следи за нами в соц. сетях:</strong>
           <ul class="social-icons">
@@ -5358,6 +5362,46 @@
       <button class="submenu-close" type="button" aria-label="закрыть" data-modal-close="add-address"></button>
     </div>
 </div>
+</div>
+
+
+  <div id="cancel-order" class="modal cancel-order modal-from-right" aria-hidden="true">
+  <div class="modal-wrap submenu-block-desktop">
+    <div class="form-wrap modal-body" >
+      <div class="menu-head">
+        <h3 class="menu-title">Отмена заказа</h3>
+      </div>
+      <div class="modal-main">
+        <form class="form form--cancel-order" method="post" autocomplete="on">
+          <div class="cancel-order__text">
+            <p>Пожалуйста, напишите нам почему вы решили отменить заказ</p>
+            <p class="order">Заказ: <span>Арт. 064206</span></p>
+          </div>
+          <label class="form__select">
+            Выберите причину
+            <span class="form__select-wrap arrow arrow--down">
+              <select name="reason" required>
+                <option value="quality">Качество</option>
+                <option value="cost">Цена</option>
+                <option value="fake">Брак</option>
+              </select>
+            </span>
+          </label>
+          <label class="form__field-wrap form__field-comment">
+            Комментарий
+            <textarea name="comment" placeholder="Введите ваше сообщение" data-validate required></textarea>
+          </label>
+
+          <div class="cancel-order__btn-wrap">
+            <button class="form__submit btn btn-purple" type="submit">Отправить</button>
+            <button class="form__submit btn btn-white" type="button" data-modal-close="cancel-order">Отменить</button>
+          </div>
+        </form>
+        <button class="modal-close-mobile" type="button" data-modal-close="write-us">Вернуться назад</button>
+      </div>
+      <button class="submenu-close" type="button" aria-label="закрыть" data-modal-close="cancel-order"></button>
+    </div>
+  </div>
 </div>
 
 

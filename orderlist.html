@@ -4018,7 +4018,7 @@
             <button id="tab-3-btn" class="lk__tab-btn" type="button" role="tab" aria-controls="tab-3"><span>Отмененные</span><sup class="title-counter">43</sup></button>
             <button id="tab-4-btn" class="lk__tab-btn" type="button" role="tab" aria-controls="tab-4"><span>Все</span><sup class="title-counter">82</sup></button>
           </div>
-          <div id="tab-1" class="lk__tabpanel wrapper" role="tabpanel" aria-labelledby="tab-1-btn" tabindex="0">
+          <div class="lk__tabpanel wrapper" role="tabpanel" aria-labelledby="tab-1-btn">
             <div class="order-tab">
   <div class="order-tab__top">
     <div class="order-title">
@@ -4073,7 +4073,7 @@
     <div class="total-price">Итого: <b>99 999₽</b></div>
     <div class="btn-wrap">
       <button class="btn btn-purple" type="button">Повторить заказ</button>
-      <button class="btn btn-white" type="button">Отменить</button>
+      <button class="btn btn-white" type="button" data-modal-open="cancel-order">Отменить</button>
     </div>
   </div>
 </div>
@@ -4132,7 +4132,488 @@
     <div class="total-price">Итого: <b>99 999₽</b></div>
     <div class="btn-wrap">
       <button class="btn btn-purple" type="button">Повторить заказ</button>
-      <button class="btn btn-white" type="button">Отменить</button>
+      <button class="btn btn-white" type="button" data-modal-open="cancel-order">Отменить</button>
+    </div>
+  </div>
+</div>
+
+          </div>
+          <div class="lk__tabpanel wrapper" role="tabpanel" aria-labelledby="tab-2-btn" hidden>
+            
+            
+            
+            <div class="order-tab">
+  <div class="order-tab__top">
+    <div class="order-title">
+      <div>Заказ #064206</div>
+      <time datetime="2021-05-18T18:23">18.05.2020 | 18:23</time>
+    </div>
+    <dl>
+      <dt>Статус заказа:</dt>
+      <dd class="status">товар получен</dd>
+      <dt>Способ оплаты:</dt>
+      <dd>Банковская карта</dd>
+      <dt>Способ Получения:</dt>
+      <dd>Курьер Mediashop</dd>
+    </dl>
+    <a class="order-details-link" href="orderdetails.html">подробнее</a>
+  </div>
+  <div class="accordion order-tab__middle">
+    <button class="accordion__title accordion-title arrow arrow--down" type="button">Товары в заказе</button>
+    <div class="accordion__content">
+      <div class="lk-order-list">
+        <div class="lk-order-list-item">
+          <div class="img-wrap">
+            <img src="img/content/phone-cart.png" width="55" height="65" alt="айфон 8">
+          </div>
+          <div class="content-wrap">
+            <div class="name">
+              <small>Арт. 064206</small>
+              <p>Смартфон Apple iPhone 11 Pro Max 64GB Retina display </p>
+            </div>
+            <span class="amount">1шт</span>
+            <b class="price">99 999₽</b>
+          </div>
+        </div>
+
+        <div class="lk-order-list-item">
+          <div class="img-wrap">
+            <img src="img/content/watch-cart.png" width="55" height="65" alt="айфон 8">
+          </div>
+          <div class="content-wrap">
+            <div class="name">
+              <small>Арт. 064206</small>
+              <p>Apple Watch 5 series 44mm +ремешек HERMES</p>
+            </div>
+            <span class="amount">1шт</span>
+            <b class="price">99 999₽</b>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="order-tab__bottom">
+    <div class="total-price">Итого: <b>99 999₽</b></div>
+    <div class="btn-wrap">
+      <button class="btn btn-purple" type="button">Повторить заказ</button>
+      <button class="btn btn-white" type="button" data-modal-open="feedback">Оставить отзыв</button>
+    </div>
+  </div>
+</div>
+
+          </div>
+          <div class="lk__tabpanel wrapper" role="tabpanel" aria-labelledby="tab-3-btn" hidden>
+            <div class="order-tab">
+  <div class="order-tab__top">
+    <div class="order-title">
+      <div>Заказ #064206</div>
+      <time datetime="2021-05-18T18:23">18.05.2020 | 18:23</time>
+    </div>
+    <dl>
+      <dt>Статус заказа:</dt>
+      <dd class="status">товар получен</dd>
+      <dt>Способ оплаты:</dt>
+      <dd>Банковская карта</dd>
+      <dt>Способ Получения:</dt>
+      <dd>Курьер Mediashop</dd>
+    </dl>
+    <a class="order-details-link" href="orderdetails.html">подробнее</a>
+  </div>
+  <div class="accordion order-tab__middle">
+    <button class="accordion__title accordion-title arrow arrow--down" type="button">Товары в заказе</button>
+    <div class="accordion__content">
+      <div class="lk-order-list">
+        <div class="lk-order-list-item">
+          <div class="img-wrap">
+            <img src="img/content/phone-cart.png" width="55" height="65" alt="айфон 8">
+          </div>
+          <div class="content-wrap">
+            <div class="name">
+              <small>Арт. 064206</small>
+              <p>Смартфон Apple iPhone 11 Pro Max 64GB Retina display </p>
+            </div>
+            <span class="amount">1шт</span>
+            <b class="price">99 999₽</b>
+          </div>
+        </div>
+
+        <div class="lk-order-list-item">
+          <div class="img-wrap">
+            <img src="img/content/watch-cart.png" width="55" height="65" alt="айфон 8">
+          </div>
+          <div class="content-wrap">
+            <div class="name">
+              <small>Арт. 064206</small>
+              <p>Apple Watch 5 series 44mm +ремешек HERMES</p>
+            </div>
+            <span class="amount">1шт</span>
+            <b class="price">99 999₽</b>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="order-tab__bottom">
+    <div class="total-price">Итого: <b>99 999₽</b></div>
+    <div class="btn-wrap">
+      <button class="btn btn-purple" type="button">Повторить заказ</button>
+      <button class="btn btn-white" type="button" data-modal-open="feedback">Оставить отзыв</button>
+    </div>
+  </div>
+</div>
+
+            <div class="order-tab">
+  <div class="order-tab__top">
+    <div class="order-title">
+      <div>Заказ #064206</div>
+      <time datetime="2021-05-18T18:23">18.05.2020 | 18:23</time>
+    </div>
+    <dl>
+      <dt>Статус заказа:</dt>
+      <dd class="status">товар получен</dd>
+      <dt>Способ оплаты:</dt>
+      <dd>Банковская карта</dd>
+      <dt>Способ Получения:</dt>
+      <dd>Курьер Mediashop</dd>
+    </dl>
+    <a class="order-details-link" href="orderdetails.html">подробнее</a>
+  </div>
+  <div class="accordion order-tab__middle">
+    <button class="accordion__title accordion-title arrow arrow--down" type="button">Товары в заказе</button>
+    <div class="accordion__content">
+      <div class="lk-order-list">
+        <div class="lk-order-list-item">
+          <div class="img-wrap">
+            <img src="img/content/phone-cart.png" width="55" height="65" alt="айфон 8">
+          </div>
+          <div class="content-wrap">
+            <div class="name">
+              <small>Арт. 064206</small>
+              <p>Смартфон Apple iPhone 11 Pro Max 64GB Retina display </p>
+            </div>
+            <span class="amount">1шт</span>
+            <b class="price">99 999₽</b>
+          </div>
+        </div>
+
+        <div class="lk-order-list-item">
+          <div class="img-wrap">
+            <img src="img/content/watch-cart.png" width="55" height="65" alt="айфон 8">
+          </div>
+          <div class="content-wrap">
+            <div class="name">
+              <small>Арт. 064206</small>
+              <p>Apple Watch 5 series 44mm +ремешек HERMES</p>
+            </div>
+            <span class="amount">1шт</span>
+            <b class="price">99 999₽</b>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="order-tab__bottom">
+    <div class="total-price">Итого: <b>99 999₽</b></div>
+    <div class="btn-wrap">
+      <button class="btn btn-purple" type="button">Повторить заказ</button>
+      <button class="btn btn-white" type="button" data-modal-open="feedback">Оставить отзыв</button>
+    </div>
+  </div>
+</div>
+
+            <div class="order-tab">
+  <div class="order-tab__top">
+    <div class="order-title">
+      <div>Заказ #064206</div>
+      <time datetime="2021-05-18T18:23">18.05.2020 | 18:23</time>
+    </div>
+    <dl>
+      <dt>Статус заказа:</dt>
+      <dd class="status">товар получен</dd>
+      <dt>Способ оплаты:</dt>
+      <dd>Банковская карта</dd>
+      <dt>Способ Получения:</dt>
+      <dd>Курьер Mediashop</dd>
+    </dl>
+    <a class="order-details-link" href="orderdetails.html">подробнее</a>
+  </div>
+  <div class="accordion order-tab__middle">
+    <button class="accordion__title accordion-title arrow arrow--down" type="button">Товары в заказе</button>
+    <div class="accordion__content">
+      <div class="lk-order-list">
+        <div class="lk-order-list-item">
+          <div class="img-wrap">
+            <img src="img/content/phone-cart.png" width="55" height="65" alt="айфон 8">
+          </div>
+          <div class="content-wrap">
+            <div class="name">
+              <small>Арт. 064206</small>
+              <p>Смартфон Apple iPhone 11 Pro Max 64GB Retina display </p>
+            </div>
+            <span class="amount">1шт</span>
+            <b class="price">99 999₽</b>
+          </div>
+        </div>
+
+        <div class="lk-order-list-item">
+          <div class="img-wrap">
+            <img src="img/content/watch-cart.png" width="55" height="65" alt="айфон 8">
+          </div>
+          <div class="content-wrap">
+            <div class="name">
+              <small>Арт. 064206</small>
+              <p>Apple Watch 5 series 44mm +ремешек HERMES</p>
+            </div>
+            <span class="amount">1шт</span>
+            <b class="price">99 999₽</b>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="order-tab__bottom">
+    <div class="total-price">Итого: <b>99 999₽</b></div>
+    <div class="btn-wrap">
+      <button class="btn btn-purple" type="button">Повторить заказ</button>
+      <button class="btn btn-white" type="button" data-modal-open="feedback">Оставить отзыв</button>
+    </div>
+  </div>
+</div>
+
+          </div>
+          <div class="lk__tabpanel wrapper" role="tabpanel" aria-labelledby="tab-4-btn" hidden>
+            <div class="order-tab">
+  <div class="order-tab__top">
+    <div class="order-title">
+      <div>Заказ #064206</div>
+      <time datetime="2021-05-18T18:23">18.05.2020 | 18:23</time>
+    </div>
+    <dl>
+      <dt>Статус заказа:</dt>
+      <dd class="status">товар получен</dd>
+      <dt>Способ оплаты:</dt>
+      <dd>Банковская карта</dd>
+      <dt>Способ Получения:</dt>
+      <dd>Курьер Mediashop</dd>
+    </dl>
+    <a class="order-details-link" href="orderdetails.html">подробнее</a>
+  </div>
+  <div class="accordion order-tab__middle">
+    <button class="accordion__title accordion-title arrow arrow--down" type="button">Товары в заказе</button>
+    <div class="accordion__content">
+      <div class="lk-order-list">
+        <div class="lk-order-list-item">
+          <div class="img-wrap">
+            <img src="img/content/phone-cart.png" width="55" height="65" alt="айфон 8">
+          </div>
+          <div class="content-wrap">
+            <div class="name">
+              <small>Арт. 064206</small>
+              <p>Смартфон Apple iPhone 11 Pro Max 64GB Retina display </p>
+            </div>
+            <span class="amount">1шт</span>
+            <b class="price">99 999₽</b>
+          </div>
+        </div>
+
+        <div class="lk-order-list-item">
+          <div class="img-wrap">
+            <img src="img/content/watch-cart.png" width="55" height="65" alt="айфон 8">
+          </div>
+          <div class="content-wrap">
+            <div class="name">
+              <small>Арт. 064206</small>
+              <p>Apple Watch 5 series 44mm +ремешек HERMES</p>
+            </div>
+            <span class="amount">1шт</span>
+            <b class="price">99 999₽</b>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="order-tab__bottom">
+    <div class="total-price">Итого: <b>99 999₽</b></div>
+    <div class="btn-wrap">
+      <button class="btn btn-purple" type="button">Повторить заказ</button>
+      <button class="btn btn-white" type="button" data-modal-open="feedback">Оставить отзыв</button>
+    </div>
+  </div>
+</div>
+
+            <div class="order-tab">
+  <div class="order-tab__top">
+    <div class="order-title">
+      <div>Заказ #064206</div>
+      <time datetime="2021-05-18T18:23">18.05.2020 | 18:23</time>
+    </div>
+    <dl>
+      <dt>Статус заказа:</dt>
+      <dd class="status">товар получен</dd>
+      <dt>Способ оплаты:</dt>
+      <dd>Банковская карта</dd>
+      <dt>Способ Получения:</dt>
+      <dd>Курьер Mediashop</dd>
+    </dl>
+    <a class="order-details-link" href="orderdetails.html">подробнее</a>
+  </div>
+  <div class="accordion order-tab__middle">
+    <button class="accordion__title accordion-title arrow arrow--down" type="button">Товары в заказе</button>
+    <div class="accordion__content">
+      <div class="lk-order-list">
+        <div class="lk-order-list-item">
+          <div class="img-wrap">
+            <img src="img/content/phone-cart.png" width="55" height="65" alt="айфон 8">
+          </div>
+          <div class="content-wrap">
+            <div class="name">
+              <small>Арт. 064206</small>
+              <p>Смартфон Apple iPhone 11 Pro Max 64GB Retina display </p>
+            </div>
+            <span class="amount">1шт</span>
+            <b class="price">99 999₽</b>
+          </div>
+        </div>
+
+        <div class="lk-order-list-item">
+          <div class="img-wrap">
+            <img src="img/content/watch-cart.png" width="55" height="65" alt="айфон 8">
+          </div>
+          <div class="content-wrap">
+            <div class="name">
+              <small>Арт. 064206</small>
+              <p>Apple Watch 5 series 44mm +ремешек HERMES</p>
+            </div>
+            <span class="amount">1шт</span>
+            <b class="price">99 999₽</b>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="order-tab__bottom">
+    <div class="total-price">Итого: <b>99 999₽</b></div>
+    <div class="btn-wrap">
+      <button class="btn btn-purple" type="button">Повторить заказ</button>
+      <button class="btn btn-white" type="button" data-modal-open="feedback">Оставить отзыв</button>
+    </div>
+  </div>
+</div>
+
+            <div class="order-tab">
+  <div class="order-tab__top">
+    <div class="order-title">
+      <div>Заказ #064206</div>
+      <time datetime="2021-05-18T18:23">18.05.2020 | 18:23</time>
+    </div>
+    <dl>
+      <dt>Статус заказа:</dt>
+      <dd class="status">товар получен</dd>
+      <dt>Способ оплаты:</dt>
+      <dd>Банковская карта</dd>
+      <dt>Способ Получения:</dt>
+      <dd>Курьер Mediashop</dd>
+    </dl>
+    <a class="order-details-link" href="orderdetails.html">подробнее</a>
+  </div>
+  <div class="accordion order-tab__middle">
+    <button class="accordion__title accordion-title arrow arrow--down" type="button">Товары в заказе</button>
+    <div class="accordion__content">
+      <div class="lk-order-list">
+        <div class="lk-order-list-item">
+          <div class="img-wrap">
+            <img src="img/content/phone-cart.png" width="55" height="65" alt="айфон 8">
+          </div>
+          <div class="content-wrap">
+            <div class="name">
+              <small>Арт. 064206</small>
+              <p>Смартфон Apple iPhone 11 Pro Max 64GB Retina display </p>
+            </div>
+            <span class="amount">1шт</span>
+            <b class="price">99 999₽</b>
+          </div>
+        </div>
+
+        <div class="lk-order-list-item">
+          <div class="img-wrap">
+            <img src="img/content/watch-cart.png" width="55" height="65" alt="айфон 8">
+          </div>
+          <div class="content-wrap">
+            <div class="name">
+              <small>Арт. 064206</small>
+              <p>Apple Watch 5 series 44mm +ремешек HERMES</p>
+            </div>
+            <span class="amount">1шт</span>
+            <b class="price">99 999₽</b>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="order-tab__bottom">
+    <div class="total-price">Итого: <b>99 999₽</b></div>
+    <div class="btn-wrap">
+      <button class="btn btn-purple" type="button">Повторить заказ</button>
+      <button class="btn btn-white" type="button" data-modal-open="feedback">Оставить отзыв</button>
+    </div>
+  </div>
+</div>
+
+            <div class="order-tab">
+  <div class="order-tab__top">
+    <div class="order-title">
+      <div>Заказ #064206</div>
+      <time datetime="2021-05-18T18:23">18.05.2020 | 18:23</time>
+    </div>
+    <dl>
+      <dt>Статус заказа:</dt>
+      <dd class="status">товар получен</dd>
+      <dt>Способ оплаты:</dt>
+      <dd>Банковская карта</dd>
+      <dt>Способ Получения:</dt>
+      <dd>Курьер Mediashop</dd>
+    </dl>
+    <a class="order-details-link" href="orderdetails.html">подробнее</a>
+  </div>
+  <div class="accordion order-tab__middle">
+    <button class="accordion__title accordion-title arrow arrow--down" type="button">Товары в заказе</button>
+    <div class="accordion__content">
+      <div class="lk-order-list">
+        <div class="lk-order-list-item">
+          <div class="img-wrap">
+            <img src="img/content/phone-cart.png" width="55" height="65" alt="айфон 8">
+          </div>
+          <div class="content-wrap">
+            <div class="name">
+              <small>Арт. 064206</small>
+              <p>Смартфон Apple iPhone 11 Pro Max 64GB Retina display </p>
+            </div>
+            <span class="amount">1шт</span>
+            <b class="price">99 999₽</b>
+          </div>
+        </div>
+
+        <div class="lk-order-list-item">
+          <div class="img-wrap">
+            <img src="img/content/watch-cart.png" width="55" height="65" alt="айфон 8">
+          </div>
+          <div class="content-wrap">
+            <div class="name">
+              <small>Арт. 064206</small>
+              <p>Apple Watch 5 series 44mm +ремешек HERMES</p>
+            </div>
+            <span class="amount">1шт</span>
+            <b class="price">99 999₽</b>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="order-tab__bottom">
+    <div class="total-price">Итого: <b>99 999₽</b></div>
+    <div class="btn-wrap">
+      <button class="btn btn-purple" type="button">Повторить заказ</button>
+      <button class="btn btn-white" type="button" data-modal-open="feedback">Оставить отзыв</button>
     </div>
   </div>
 </div>
@@ -4710,7 +5191,7 @@
         <h3 class="menu-title">Спасибо!</h3>
       </div>
       <div class="modal-main success-order__main">
-        <p class="success-order__text">Форма успешно отправлена</p>
+        <div class="success-order__text">Форма успешно отправлена</div>
         <div class="modal-login-footer">
           <strong>Следи за нами в соц. сетях:</strong>
           <ul class="social-icons">
@@ -4874,58 +5355,295 @@
 </div>
 
     
-  <div  id="add-address" class="modal modal--address modal-from-right" aria-hidden="true">
+  <div id="cancel-order" class="modal cancel-order modal-from-right" aria-hidden="true">
   <div class="modal-wrap submenu-block-desktop">
     <div class="form-wrap modal-body" >
       <div class="menu-head">
-        <h3 class="menu-title">Добавить новый адрес</h3>
+        <h3 class="menu-title">Отмена заказа</h3>
       </div>
       <div class="modal-main">
-        <form class="form form--address" method="post" autocomplete="on">
+        <form class="form form--cancel-order" method="post" autocomplete="on">
+          <div class="cancel-order__text">
+            <p>Пожалуйста, напишите нам почему вы решили отменить заказ</p>
+            <p class="order">Заказ: <span>Арт. 064206</span></p>
+          </div>
           <label class="form__select">
-            Название региона
+            Выберите причину
             <span class="form__select-wrap arrow arrow--down">
-              <select name="time" data-validate required>
-                <option value="" selected disabled>Выберите регион</option>
-                <option value="moscow">Московская область</option>
-                <option value="piter">Ленинградская область</option>
-                <option value="rostov">Ростовская область</option>
-                <option value="krasnodar">Краснодарский край</option>
+              <select name="reason" required>
+                <option value="quality">Качество</option>
+                <option value="cost">Цена</option>
+                <option value="fake">Брак</option>
               </select>
             </span>
           </label>
-          <label class="form__field-wrap">
-            Улица*
-            <input type="text" placeholder="Введите вашу улицу" name="street" data-validate required>
+          <label class="form__field-wrap form__field-comment">
+            Комментарий
+            <textarea name="comment" placeholder="Введите ваше сообщение" data-validate required></textarea>
           </label>
-          <label class="form__field-wrap">
-            Название нас.пункта*
-            <input type="text" placeholder="Введите название нас.пункта" name="street" data-validate required>
+
+          <div class="cancel-order__btn-wrap">
+            <button class="form__submit btn btn-purple" type="submit">Отправить</button>
+            <button class="form__submit btn btn-white" type="button" data-modal-close="cancel-order">Отменить</button>
+          </div>
+        </form>
+        <button class="modal-close-mobile" type="button" data-modal-close="write-us">Вернуться назад</button>
+      </div>
+      <button class="submenu-close" type="button" aria-label="закрыть" data-modal-close="cancel-order"></button>
+    </div>
+  </div>
+</div>
+
+
+  <div id="feedback" class="modal feedback-modal modal-from-right" aria-hidden="true">
+  <div class="modal-wrap  submenu-block-desktop">
+    <div class="form-wrap modal-body" >
+      <div class="menu-head">
+        <h3 class="menu-title">Написать отзыв</h3>
+      </div>
+      <div class="modal-main">
+        <div class="feedback-modal__list">
+          
+            <div class="feedback-modal__list-item">
+              <input id="item-0" class="visually-hidden" type="radio" name="item" checked>
+              <span class="custom-radio"></span>
+              <label for="item-0" class="order-element">
+                <span class="order-element__wrap-img">
+                  
+  <picture>
+    <!-- 1x-100px/120px 2x-200px/240px -->
+    <source type="image/webp" srcset="img/content/phone-small.webp 1x, img/content/phone-small@2x.webp 2x">
+    <img class=content-img src="img/content/phone-small.jpg" srcset="img/content/phone-small@2x.jpg 2x" width="100" height="120" alt="картинка" loading=lazy decoding=async>
+  </picture>
+
+                </span>
+                <span class="order-element__info">
+                  <span class="order-element__vendor">Арт. 064206</span>
+                  <span class="order-element__desc">Apple MacBook Air 13 дисплей Retina с технологией True Tone Mid 2019</span>
+                </span>
+              </label>
+            </div>
+          
+            <div class="feedback-modal__list-item">
+              <input id="item-1" class="visually-hidden" type="radio" name="item" >
+              <span class="custom-radio"></span>
+              <label for="item-1" class="order-element">
+                <span class="order-element__wrap-img">
+                  
+  <picture>
+    <!-- 1x-100px/120px 2x-200px/240px -->
+    <source type="image/webp" srcset="img/content/phone-small.webp 1x, img/content/phone-small@2x.webp 2x">
+    <img class=content-img src="img/content/phone-small.jpg" srcset="img/content/phone-small@2x.jpg 2x" width="100" height="120" alt="картинка" loading=lazy decoding=async>
+  </picture>
+
+                </span>
+                <span class="order-element__info">
+                  <span class="order-element__vendor">Арт. 064206</span>
+                  <span class="order-element__desc">Apple MacBook Air 13 дисплей Retina с технологией True Tone Mid 2019</span>
+                </span>
+              </label>
+            </div>
+          
+            <div class="feedback-modal__list-item">
+              <input id="item-2" class="visually-hidden" type="radio" name="item" >
+              <span class="custom-radio"></span>
+              <label for="item-2" class="order-element">
+                <span class="order-element__wrap-img">
+                  
+  <picture>
+    <!-- 1x-100px/120px 2x-200px/240px -->
+    <source type="image/webp" srcset="img/content/phone-small.webp 1x, img/content/phone-small@2x.webp 2x">
+    <img class=content-img src="img/content/phone-small.jpg" srcset="img/content/phone-small@2x.jpg 2x" width="100" height="120" alt="картинка" loading=lazy decoding=async>
+  </picture>
+
+                </span>
+                <span class="order-element__info">
+                  <span class="order-element__vendor">Арт. 064206</span>
+                  <span class="order-element__desc">Apple MacBook Air 13 дисплей Retina с технологией True Tone Mid 2019</span>
+                </span>
+              </label>
+            </div>
+          
+            <div class="feedback-modal__list-item">
+              <input id="item-3" class="visually-hidden" type="radio" name="item" >
+              <span class="custom-radio"></span>
+              <label for="item-3" class="order-element">
+                <span class="order-element__wrap-img">
+                  
+  <picture>
+    <!-- 1x-100px/120px 2x-200px/240px -->
+    <source type="image/webp" srcset="img/content/phone-small.webp 1x, img/content/phone-small@2x.webp 2x">
+    <img class=content-img src="img/content/phone-small.jpg" srcset="img/content/phone-small@2x.jpg 2x" width="100" height="120" alt="картинка" loading=lazy decoding=async>
+  </picture>
+
+                </span>
+                <span class="order-element__info">
+                  <span class="order-element__vendor">Арт. 064206</span>
+                  <span class="order-element__desc">Apple MacBook Air 13 дисплей Retina с технологией True Tone Mid 2019</span>
+                </span>
+              </label>
+            </div>
+          
+        </div>
+        <button class="feedback-modal__submit btn btn-purple" type="button" data-modal-open="feedback-full">Продолжить</button>
+      </div>
+      <button class="submenu-close" type="button" aria-label="закрыть" data-modal-close="fast-order"></button>
+    </div>
+  </div>
+</div>
+
+
+  <div id="feedback-full" class="modal feedback-modal modal-from-right" aria-hidden="true">
+  <div class="modal-wrap  submenu-block-desktop">
+    <div class="form-wrap modal-body" >
+      <div class="menu-head">
+        <h3 class="menu-title">Написать отзыв</h3>
+      </div>
+      <div class="modal-main">
+        <div class="order-element order-element--fast">
+          <div class="order-element__wrap-img">
+            
+  <picture>
+    <!-- 1x-100px/120px 2x-200px/240px -->
+    <source type="image/webp" srcset="img/content/phone-small.webp 1x, img/content/phone-small@2x.webp 2x">
+    <img class=content-img src="img/content/phone-small.jpg" srcset="img/content/phone-small@2x.jpg 2x" width="100" height="120" alt="картинка" loading=lazy decoding=async>
+  </picture>
+
+          </div>
+          <div class="order-element__info">
+            <span class="order-element__vendor">Арт. 064206</span>
+            <p class="order-element__desc">Apple MacBook Air 13 дисплей Retina с технологией True Tone Mid 2019</p>
+          </div>
+        </div>
+
+        <form class="form form--feedback" method="post"  autocomplete="on">
+          <div class="feedback-modal__rating">
+            <span>Kачество</span>
+            <fieldset class="rating">
+              <legend>Звездный рейтинг</legend>
+              <div class="group">
+                <input id="star-1qual" type="radio" name="rating-quality" value="1">
+                <label for="star-1qual" aria-label="1 звезда"></label>
+
+                <input id="star-2qual" type="radio" name="rating-quality" value="2">
+                <label for="star-2qual" aria-label="2 звезды"></label>
+
+                <input id="star-3qual" type="radio" name="rating-quality" value="3">
+                <label for="star-3qual" aria-label="3 звезды"></label>
+
+                <input id="star-4qual" type="radio" name="rating-quality" value="4">
+                <label for="star-4qual" aria-label="4 звезды"></label>
+
+                <input id="star-5qual" type="radio" name="rating-quality" value="5">
+                <label for="star-5qual" aria-label="5 звезд"></label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="feedback-modal__rating">
+            <span>Сервис</span>
+            <fieldset class="rating">
+              <legend>Звездный рейтинг</legend>
+              <div class="group">
+                <input id="star-1serv" type="radio" name="rating-serv" value="1">
+                <label for="star-1serv" aria-label="1 звезда"></label>
+
+                <input id="star-2serv" type="radio" name="rating-serv" value="2">
+                <label for="star-2serv" aria-label="2 звезды"></label>
+
+                <input id="star-3serv" type="radio" name="rating-serv" value="3">
+                <label for="star-3serv" aria-label="3 звезды"></label>
+
+                <input id="star-4serv" type="radio" name="rating-serv" value="4">
+                <label for="star-4serv" aria-label="4 звезды"></label>
+
+                <input id="star-5serv" type="radio" name="rating-serv" value="5">
+                <label for="star-5serv" aria-label="5 звезд"></label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="feedback-modal__rating">
+            <span>Доставка</span>
+            <fieldset class="rating">
+              <legend>Звездный рейтинг</legend>
+              <div class="group">
+                <input id="star-1ship" type="radio" name="rating-ship" value="1">
+                <label for="star-1ship" aria-label="1 звезда"></label>
+
+                <input id="star-2ship" type="radio" name="rating-ship" value="2">
+                <label for="star-2ship" aria-label="2 звезды"></label>
+
+                <input id="star-3ship" type="radio" name="rating-ship" value="3">
+                <label for="star-3ship" aria-label="3 звезды"></label>
+
+                <input id="star-4ship" type="radio" name="rating-ship" value="4">
+                <label for="star-4ship" aria-label="4 звезды"></label>
+
+                <input id="star-5ship" type="radio" name="rating-ship" value="5">
+                <label for="star-5ship" aria-label="5 звезд"></label>
+              </div>
+            </fieldset>
+          </div>
+          <label class="form__field-wrap form__field-wrap--name">
+            Ваше имя*
+            <input type="text" placeholder="Введите ваше имя" name="user-name" data-validate required>
           </label>
-          <label class="form__field-wrap">
-            Индекс
-            <input type="text" placeholder="Введите индекс" name="street" data-validate="number">
+          <label class="form__field-wrap form__field-comment">
+            Комментарий*
+            <textarea name="comment" placeholder="Введите ваше сообщение" data-validate required></textarea>
           </label>
-          <div class="form__three-blocks">
-            <label class="form__field-wrap">
-              Дом*
-              <input type="text" placeholder="Дом" name="house" data-validate required>
+
+          <div class="feedback-modal__gallery">
+            <div class="feedback-modal__img">
+              <img src="img/content/fb1.jpg" width="110" height="60" alt="задняя крышка телефона">
+              <button class="remove-img" type="button" aria-label="удалить фото"></button>
+            </div>
+            <div class="feedback-modal__img">
+              <img src="img/content/fb2.jpg" width="110" height="60" alt="боковая сторона телефона">
+              <button class="remove-img" type="button" aria-label="удалить фото"></button>
+            </div>
+            <div class="feedback-modal__img">
+              <img src="img/content/fb3.jpg" width="110" height="60" alt="боковая сторона телефона">
+              <button class="remove-img" type="button" aria-label="удалить фото"></button>
+            </div>
+            <div class="feedback-modal__img">
+              <img src="img/content/fb4.jpg" width="110" height="60" alt="боковая сторона телефона">
+              <button class="remove-img" type="button" aria-label="удалить фото"></button>
+            </div>
+            <div class="feedback-modal__add">
+              <input class="visually-hidden" id="fileLoader" type="file" name="fileLoader" accept="image/*" multiple>
+              <label for="fileLoader" aria-label="Добавить фото"></label>
+            </div>
+          </div>
+
+          <div class="feedback-modal__recommend">
+            <label>
+              <input class="visually-hidden" type="radio" name="like" value="like">
+              
+  <svg  width="24" height="24">
+    <use href="#icon-like"></use>
+  </svg>
+
+              <span>Я рекомендую этот товар </span>
             </label>
-            <label class="form__field-wrap">
-              Подъезд
-              <input type="text" placeholder="Подъезд" name="house">
-            </label>
-            <label class="form__field-wrap">
-              Квартира
-              <input type="text" placeholder="Квартира" name="house">
+            <label>
+              <input class="visually-hidden" type="radio" name="like" value="dislike">
+              
+  <svg  width="24" height="24">
+    <use href="#icon-dislike"></use>
+  </svg>
+
+              <span>Я не рекомендую этот товар </span>
             </label>
           </div>
-          <button class="form__submit btn btn-purple" type="submit">Добавить</button>
+          <div class="feedback-modal__btns">
+            <button class="form__submit btn btn-purple" type="submit">Отправить</button>
+            <button class="btn btn-black" type="button" data-modal-close="feedback-full">Отменить</button>
+          </div>
         </form>
       </div>
-      <button class="submenu-close" type="button" aria-label="закрыть" data-modal-close="add-address"></button>
+      <button class="submenu-close" type="button" aria-label="закрыть" data-modal-close="fast-order"></button>
     </div>
-</div>
+  </div>
 </div>
 
 
