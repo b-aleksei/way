@@ -4040,9 +4040,14 @@
 
         <h2 class="service__title">Как узнать о технических характеристиках?</h2>
         <div class="service__tab-container service__text-block accordion" style="--tab-size: 2;">
-          <button id="tab-1-btn" class="service__tab-title accordion-title active" type="button" role="tab"
-                  aria-controls="tab-1" aria-selected="true">На сайте
-          </button>
+          <div class="service__tab-list" role="tablist">
+            <button id="tab-1-btn" class="service__tab-title" type="button" role="tab"
+                    aria-controls="tab-1" aria-selected="true">На сайте
+            </button>
+            <button id="tab-2-btn" class="service__tab-title" type="button" role="tab"
+                    aria-controls="tab-2">В мобильном приложении
+            </button>
+          </div>
           <div id="tab-1" class="service__tab-content" role="tabpanel" aria-labelledby="tab-1-btn">
             <ol>
               <li>Таб 1 Если купленный у нас товар оказался товаром ненадлежащего качества, Магазин МедиаШоп24 несет
@@ -4054,9 +4059,7 @@
               </li>
             </ol>
           </div>
-          <button id="tab-2-btn" class="service__tab-title accordion-title" type="button" role="tab" aria-controls="tab-2">В мобильном приложении
-          </button>
-          <div id="tab-2" class="service__tab-content" role="tabpanel" aria-labelledby="tab-2-btn">
+          <div id="tab-2" class="service__tab-content" role="tabpanel" aria-labelledby="tab-2-btn" hidden>
             <ol>
               <li>Таб 2 Если купленный у нас товар оказался товаром ненадлежащего качества, Магазин МедиаШоп24 несет
                 ответственность перед покупателем согласно закону «О защите прав потребителей»
