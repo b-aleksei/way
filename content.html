@@ -5428,21 +5428,23 @@
         <form class="form form--cancel-order" method="post" autocomplete="on">
           <div class="cancel-order__text">
             <p>Пожалуйста, напишите нам почему вы решили отменить заказ</p>
-            <p class="order">Заказ: <span>Арт. 064206</span></p>
+            <p class="order">Заказ: <span class="cancel-order__number">#064206</span></p>
           </div>
           <label class="form__select">
             Выберите причину
             <span class="form__select-wrap arrow arrow--down">
               <select name="reason" required>
-                <option value="quality">Качество</option>
-                <option value="cost">Цена</option>
-                <option value="fake">Брак</option>
+                <option value="ship-cost">Стоимость доставки</option>
+                <option value="ship-time">Сроки доставки</option>
+                <option value="cheep">Нашел дешевле</option>
+                <option value="changed-my-mind">Передумал</option>
+                <option value="other">Другое</option>
               </select>
             </span>
           </label>
           <label class="form__field-wrap form__field-comment">
             Комментарий
-            <textarea name="comment" placeholder="Введите ваше сообщение" data-validate required></textarea>
+            <textarea name="comment" placeholder="Введите ваше сообщение"></textarea>
           </label>
 
           <div class="cancel-order__btn-wrap">
