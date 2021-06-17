@@ -5232,17 +5232,17 @@
       </div>
 
       <div class="card-main__feedback-gallery slider-container">
-        <div class="card-main__feedback-slider">
-          <div class="card-main__feedback-slide">
+        <div class="card-main__feedback-slider swiper-wrapper">
+          <div class="swiper-slide">
             <img src="img/content/fb1.jpg" alt="задняя крышка телефона">
           </div>
-          <div class="card-main__feedback-slide">
+          <div class="swiper-slide">
             <img src="img/content/fb2.jpg" alt="боковая сторона телефона">
           </div>
-          <div class="card-main__feedback-slide">
+          <div class="swiper-slide">
             <img src="img/content/fb3.jpg" alt="боковая сторона телефона">
           </div>
-          <div class="card-main__feedback-slide">
+          <div class="swiper-slide">
             <img src="img/content/fb4.jpg" alt="боковая сторона телефона">
           </div>
         </div>
@@ -7341,6 +7341,21 @@
   <div class="modal-wrap card-slider-modal__wrap">
     <div class="modal-body card-slider-modal__body" >
       <button type="button" class="modal-close" data-modal-close="card-slider" aria-label="закрыть"></button>
+    </div>
+  </div>
+</div>
+
+  <div id="feedback-slider" class="modal fb-popup modal-from-right" aria-hidden="true">
+  <div class="modal-wrap fb-popup__wrap">
+    <div class="modal-body" >
+      <div class="fb-slider-container slider-container">
+        <div class="fb-popup__navigation">
+          <button class="btn-slider btn-slider--prev arrow arrow--left" type="button" aria-label="предыдущий слайд"></button>
+          <div class="slider-pagination"></div>
+          <button class="btn-slider btn-slider--next arrow arrow--right" type="button" aria-label="следующий слайд"></button>
+        </div>
+      </div>
+      <button type="button" class="modal-close" data-modal-close="feedback-slider" aria-label="закрыть"></button>
     </div>
   </div>
 </div>
