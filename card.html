@@ -7556,26 +7556,10 @@
             Комментарий*
             <textarea name="comment" placeholder="Введите ваше сообщение" data-validate required></textarea>
           </label>
-
+          <p class="feedback-modal__title-upload">Загрузить изображение в формате JPEG, JPG, PNG</p>
           <div class="feedback-modal__gallery">
-            <div class="feedback-modal__img">
-              <img src="img/content/fb1.jpg" width="110" height="60" alt="задняя крышка телефона">
-              <button class="remove-img" type="button" aria-label="удалить фото"></button>
-            </div>
-            <div class="feedback-modal__img">
-              <img src="img/content/fb2.jpg" width="110" height="60" alt="боковая сторона телефона">
-              <button class="remove-img" type="button" aria-label="удалить фото"></button>
-            </div>
-            <div class="feedback-modal__img">
-              <img src="img/content/fb3.jpg" width="110" height="60" alt="боковая сторона телефона">
-              <button class="remove-img" type="button" aria-label="удалить фото"></button>
-            </div>
-            <div class="feedback-modal__img">
-              <img src="img/content/fb4.jpg" width="110" height="60" alt="боковая сторона телефона">
-              <button class="remove-img" type="button" aria-label="удалить фото"></button>
-            </div>
             <div class="feedback-modal__add">
-              <input class="visually-hidden" id="fileLoader" type="file" name="fileLoader" accept="image/*" multiple>
+              <input class="visually-hidden" id="fileLoader" type="file" name="fileLoader" accept="image/.png, .jpg, .jpeg" multiple>
               <label for="fileLoader" aria-label="Добавить фото"></label>
             </div>
           </div>
